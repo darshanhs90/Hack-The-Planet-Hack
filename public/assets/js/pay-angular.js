@@ -29,7 +29,7 @@ app.controller('myCtrl', function($scope, $http) {
 
 
     $http({
-        url: 'http://localhost:1337/getItem',
+        url: 'http://bitwise.mybluemix.net/getItem',
         method: "GET"
     }).success(function(data, status, headers, config) {
         if (data != '0') {
@@ -50,7 +50,7 @@ app.controller('myCtrl', function($scope, $http) {
     $scope.bitCoinPay = function() {
       
         $http({
-            url: 'http://localhost:1337/sendBitcoin',
+            url: 'http://bitwise.mybluemix.net/sendBitcoin',
             method: "GET",
             params:{amount:0.0001}
         }).success(function(data, status, headers, config) {
@@ -79,7 +79,7 @@ app.controller('myCtrl', function($scope, $http) {
                 $scope.message3 = 'Your friend has invited you to pay ' + ($scope.percent3 * $scope.price / 100) + 'USD for ' + $scope.payData.title + ' .The payment can be done from the following link http://localhost:1337/pay.html';
 
                 $http({
-                    url: 'http://localhost:1337/sendEmail',
+                    url: 'http://bitwise.mybluemix.net/sendEmail',
                     method: "GET",
                     params: {
                         email: $scope.email1,
@@ -87,7 +87,7 @@ app.controller('myCtrl', function($scope, $http) {
                     }
                 }).success(function(data, status, headers, config) {
                     $http({
-                        url: 'http://localhost:1337/sendEmail',
+                        url: 'http://bitwise.mybluemix.net/sendEmail',
                         method: "GET",
                         params: {
                             email: $scope.email2,
@@ -96,7 +96,7 @@ app.controller('myCtrl', function($scope, $http) {
                     }).success(function(data, status, headers, config) {
 
                         $http({
-                            url: 'http://localhost:1337/sendEmail',
+                            url: 'http://bitwise.mybluemix.net/sendEmail',
                             method: "GET",
                             params: {
                                 email: $scope.email3,
@@ -139,14 +139,14 @@ window.location.replace('./dropin.html');
 
             swal({   title: titleSwal,   text: "You will not be able to rollback once done!",   type: "warning",   showCancelButton: true,   confirmButtonColor: "#DD6B55",   confirmButtonText: "Yes, confirm it!",   cancelButtonText: "No, cancel It!",   closeOnConfirm: false,   closeOnCancel: false }, function(isConfirm){   if (isConfirm) {     swal("Payment Successful!", "You have payed "+$scope.amount/bitValue+ " Bitcoins to "+$scope.mail, "success"); 
                 $http({
-                    url: 'http://localhost:1337/sendEmail',
+                    url: 'http://bitwise.mybluemix.net/sendEmail',
                     method: "GET",
                     params:{email:$scope.mail,message:'Your friend has payed you '+$scope.amount/bitValue+' Bitcoins',subject:'Splitwise Debt'}
                 }).success(function(data, status, headers, config) {
                     console.log(data);
                     alertify.success('Payment Mail Confirmation sent to recipient');
                     $http({
-                        url: 'http://localhost:1337/sendBitcoin',
+                        url: 'http://bitwise.mybluemix.net/sendBitcoin',
                         method: "GET",
                         params:{amount:0.0001}
                     }).success(function(data, status, headers, config) {

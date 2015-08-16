@@ -37,7 +37,7 @@ $http({
 	};
 	withdrawAmount=withdrawAmount/(depositAmount+withdrawAmount);
 	depositAmount=100-withdrawAmount;
-	newData.push({label: "Widthdrawals in %", value: withdrawAmount.toPrecision(4)});
+	newData.push({label: "Withdrawals in %", value: withdrawAmount.toPrecision(4)});
 	newData.push({label: "Deposits in %", value: depositAmount.toPrecision(4)});
 
 

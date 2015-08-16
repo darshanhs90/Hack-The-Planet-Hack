@@ -3,7 +3,7 @@ var map,marker;
 function initMap() {
 
   $.ajax({
-    url: 'http://localhost:1337/getMapData',
+    url: 'http://bitwise.mybluemix.net/getMapData',
     success: function(res){
 
 

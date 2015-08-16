@@ -20,7 +20,7 @@ $scope.getBalance=function(){
 	$scope.exchangeShow=false;
 	$scope.balanceShow=true;
 	$http({
-		url: 'http://localhost:1337/getBalance',
+		url: 'http://bitwise.mybluemix.net/getBalance',
 		method: "GET",
 		params:{itemname:$scope.searcher}
 	}).success(function(data, status, headers, config) {
@@ -44,7 +44,7 @@ $scope.getChartdata=function(){
 
 	nanobar.go(30);
 	$http({
-		url: 'http://localhost:1337/getChartdata',
+		url: 'http://bitwise.mybluemix.net/getChartdata',
 		method: "GET"
 	}).success(function(data, status, headers, config) {
 		
@@ -65,7 +65,7 @@ $scope.getExchangeRates=function(){
 
 	nanobar.go(30);
 	$http({
-		url: 'http://localhost:1337/getExchangeRates',
+		url: 'http://bitwise.mybluemix.net/getExchangeRates',
 		method: "GET"
 	}).success(function(data, status, headers, config) {
 		console.log(data); 

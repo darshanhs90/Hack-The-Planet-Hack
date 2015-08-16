@@ -28,7 +28,7 @@ nanobar.go(45);
 	$scope.paypalPay=function($val){
 		nanobar.go(65);
 		$http({
-			url: 'http://localhost:1337/setPrice',
+			url: 'http://bitwise.mybluemix.net/setPrice',
 			method: "GET",
 			params:{price:$scope.bills[$val].payment_amount}
 		}).success(function(data, status, headers, config) {
@@ -41,7 +41,7 @@ nanobar.go(45);
 	$scope.bitcoinPay=function($val){
 		nanobar.go(45);
 		$http({
-			url: 'http://localhost:1337/sendBitcoin',
+			url: 'http://bitwise.mybluemix.net/sendBitcoin',
 			method: "GET",
 			params:{amount:0.0001}
 		}).success(function(data, status, headers, config) {

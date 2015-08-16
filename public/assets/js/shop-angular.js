@@ -30,14 +30,14 @@ $scope.searchItem=function(){
 	nanobar.go(20);
 	$scope.pagenum=1;
 	$http({
-		url: 'http://localhost:1337/ebaySearch',
+		url: 'http://bitwise.mybluemix.net/ebaySearch',
 		method: "GET",
 		params:{itemname:$scope.searcher}
 	}).success(function(data, status, headers, config) {
 		console.log(data);
 		nanobar.go(55);
 		$http({
-			url: 'http://localhost:1337/ebaySearch1',
+			url: 'http://bitwise.mybluemix.net/ebaySearch1',
 			method: "GET",
 			params:{itemname:$scope.searcher}
 		}).success(function(data, status, headers, config) {
@@ -53,7 +53,7 @@ $scope.searchItem=function(){
 $scope.fetchNewResults=function(){
 	nanobar.go(45);
 $http({
-		url: 'http://localhost:1337/ebaySearch2',
+		url: 'http://bitwise.mybluemix.net/ebaySearch2',
 		method: "GET",
 		params:{pagenum:$scope.pagenum}
 	}).success(function(data, status, headers, config) {
@@ -67,7 +67,7 @@ $http({
 $scope.buyItem=function($val){
 nanobar.go(45);
 $http({
-		url: 'http://localhost:1337/setItem',
+		url: 'http://bitwise.mybluemix.net/setItem',
 		method: "GET",
 		params:{index:$val}
 	}).success(function(data, status, headers, config) {
