@@ -128,6 +128,8 @@
                         <button class="btn btn-success" ng-click="sendMail()" ng-show="addFlag=='1'">Send Payment Notification</button>
                         <button class="btn btn-success" ng-click="paypalPay()" ng-show="payFlag=='1'">Pay Using Card/Paypal</button>
                         <button class="btn btn-success" ng-click="bitCoinPay()" ng-show="payFlag=='1'">Pay Using Bit Coin</button>
+                        <button class="btn btn-success" href="paymap.html" ng-show="payFlag=='1'">Pay Using Cash/ATM</button>
+                        
                     </div>
                 </div>
                 <div class="row" ng-show="prf==true">
@@ -140,6 +142,7 @@
                             <button class="btn btn-success" ng-click="payPaypal()" ng-show="mail!='' && amount!=''">Pay using Card/Paypal</button>
 
                             <button class="btn btn-success" ng-click="payBitcoin()" ng-show="mail!='' && amount!=''">Pay using BitCoin</button>
+                            <a href="paymap.html"><button class="btn btn-success"  ng-show="mail!='' && amount!=''">Pay Using Cash/ATM</button></a>
                         </div>
                     </div>
                 </div>

@@ -25,7 +25,7 @@ var price='';
 var util = require('util');
 var braintree = require('braintree');
 var bodyParser = require('body-parser');
-
+var mapData=[];
 /**
  * Instantiate your server and a JSON parser to parse all incoming requests
  */
@@ -102,7 +102,25 @@ app.disable('etag');
         );
 
     });
+    for (var i = 0; i<40; i++) {
 
+        request('http://api.reimaginebanking.com/atms?key=a7e63559418eb419cd29301d32626843&page='+i, function (error, response, body) {
+          if (!error && response.statusCode == 200) {
+            console.log(JSON.parse(body).data);
+            var dt=JSON.parse(body).data;
+            for (var j = 0; j <dt.length; j++) {
+               mapData.push(dt[j]);
+            };
+            
+        }
+    })
+    };
+
+    app.get('/getMapData',function(req,res){
+        console.log(mapData);
+        res.send(mapData);
+        res.end();
+    })
     app.get('/ebaySearch1', function(req, res) {
         res.send(itemResponse);
         res.end();
@@ -120,10 +138,10 @@ app.disable('etag');
         res.end();
     });
     app.get('/setPrice',function(req,res){
-     price=req.query.price;
-     res.end();
+       price=req.query.price;
+       res.end();
 
- });
+   });
 
 
     app.get('/getPrice',function(req,res){
@@ -213,10 +231,10 @@ app.disable('etag');
 
     app.get('/getChartdata', function(req, response) {
         statistics.getChartData('total-bitcoin', function(err,res){
-         console.log(res);
-         response.send(res);
-         response.end();
-     });
+           console.log(res);
+           response.send(res);
+           response.end();
+       });
 
     });
 
