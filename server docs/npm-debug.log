@@ -1,0 +1,1866 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node', '/usr/local/bin/npm', 'install' ]
+2 info using npm@1.4.28
+3 info using node@v0.10.37
+4 warn package.json NodejsStarterApp@0.0.1 No README data
+5 verbose readDependencies using package.json deps
+6 verbose install where, deps [ '/Users/hasudhakar/Desktop/node/Hack The Planet Hack/server docs',
+6 verbose install   [ 'express',
+6 verbose install     'cfenv',
+6 verbose install     'twitter',
+6 verbose install     'watson-developer-cloud',
+6 verbose install     'cors',
+6 verbose install     'https',
+6 verbose install     'request',
+6 verbose install     'http',
+6 verbose install     'alchemy-api',
+6 verbose install     'sendgrid',
+6 verbose install     'twilio',
+6 verbose install     'twit',
+6 verbose install     'oauth',
+6 verbose install     'node-bing-api',
+6 verbose install     'socket.io',
+6 verbose install     'node-tweet-stream',
+6 verbose install     'longjohn' ] ]
+7 info preinstall NodejsStarterApp@0.0.1
+8 verbose readDependencies using package.json deps
+9 verbose cache add [ 'twitter@1.2.x', null ]
+10 verbose cache add name=undefined spec="twitter@1.2.x" args=["twitter@1.2.x",null]
+11 verbose parsed url { protocol: null,
+11 verbose parsed url   slashes: null,
+11 verbose parsed url   auth: null,
+11 verbose parsed url   host: null,
+11 verbose parsed url   port: null,
+11 verbose parsed url   hostname: null,
+11 verbose parsed url   hash: null,
+11 verbose parsed url   search: null,
+11 verbose parsed url   query: null,
+11 verbose parsed url   pathname: 'twitter@1.2.x',
+11 verbose parsed url   path: 'twitter@1.2.x',
+11 verbose parsed url   href: 'twitter@1.2.x' }
+12 verbose cache add [ 'watson-developer-cloud@0.9.x', null ]
+13 verbose cache add name=undefined spec="watson-developer-cloud@0.9.x" args=["watson-developer-cloud@0.9.x",null]
+14 verbose parsed url { protocol: null,
+14 verbose parsed url   slashes: null,
+14 verbose parsed url   auth: null,
+14 verbose parsed url   host: null,
+14 verbose parsed url   port: null,
+14 verbose parsed url   hostname: null,
+14 verbose parsed url   hash: null,
+14 verbose parsed url   search: null,
+14 verbose parsed url   query: null,
+14 verbose parsed url   pathname: 'watson-developer-cloud@0.9.x',
+14 verbose parsed url   path: 'watson-developer-cloud@0.9.x',
+14 verbose parsed url   href: 'watson-developer-cloud@0.9.x' }
+15 verbose cache add name="twitter" spec="1.2.x" args=["twitter","1.2.x"]
+16 verbose parsed url { protocol: null,
+16 verbose parsed url   slashes: null,
+16 verbose parsed url   auth: null,
+16 verbose parsed url   host: null,
+16 verbose parsed url   port: null,
+16 verbose parsed url   hostname: null,
+16 verbose parsed url   hash: null,
+16 verbose parsed url   search: null,
+16 verbose parsed url   query: null,
+16 verbose parsed url   pathname: '1.2.x',
+16 verbose parsed url   path: '1.2.x',
+16 verbose parsed url   href: '1.2.x' }
+17 verbose addNamed [ 'twitter', '1.2.x' ]
+18 verbose addNamed [ null, '>=1.2.0-0 <1.3.0-0' ]
+19 verbose cache add [ 'cors@2.7.x', null ]
+20 verbose cache add name=undefined spec="cors@2.7.x" args=["cors@2.7.x",null]
+21 verbose parsed url { protocol: null,
+21 verbose parsed url   slashes: null,
+21 verbose parsed url   auth: null,
+21 verbose parsed url   host: null,
+21 verbose parsed url   port: null,
+21 verbose parsed url   hostname: null,
+21 verbose parsed url   hash: null,
+21 verbose parsed url   search: null,
+21 verbose parsed url   query: null,
+21 verbose parsed url   pathname: 'cors@2.7.x',
+21 verbose parsed url   path: 'cors@2.7.x',
+21 verbose parsed url   href: 'cors@2.7.x' }
+22 verbose cache add name="watson-developer-cloud" spec="0.9.x" args=["watson-developer-cloud","0.9.x"]
+23 verbose parsed url { protocol: null,
+23 verbose parsed url   slashes: null,
+23 verbose parsed url   auth: null,
+23 verbose parsed url   host: null,
+23 verbose parsed url   port: null,
+23 verbose parsed url   hostname: null,
+23 verbose parsed url   hash: null,
+23 verbose parsed url   search: null,
+23 verbose parsed url   query: null,
+23 verbose parsed url   pathname: '0.9.x',
+23 verbose parsed url   path: '0.9.x',
+23 verbose parsed url   href: '0.9.x' }
+24 verbose addNamed [ 'watson-developer-cloud', '0.9.x' ]
+25 verbose addNamed [ null, '>=0.9.0-0 <0.10.0-0' ]
+26 silly lockFile 952c1b38-twitter-1-2-x twitter@1.2.x
+27 verbose lock twitter@1.2.x /Users/hasudhakar/.npm/952c1b38-twitter-1-2-x.lock
+28 silly lockFile 6e82d655-watson-developer-cloud-0-9-x watson-developer-cloud@0.9.x
+29 verbose lock watson-developer-cloud@0.9.x /Users/hasudhakar/.npm/6e82d655-watson-developer-cloud-0-9-x.lock
+30 verbose cache add [ 'https@1.0.x', null ]
+31 verbose cache add name=undefined spec="https@1.0.x" args=["https@1.0.x",null]
+32 verbose parsed url { protocol: null,
+32 verbose parsed url   slashes: null,
+32 verbose parsed url   auth: null,
+32 verbose parsed url   host: null,
+32 verbose parsed url   port: null,
+32 verbose parsed url   hostname: null,
+32 verbose parsed url   hash: null,
+32 verbose parsed url   search: null,
+32 verbose parsed url   query: null,
+32 verbose parsed url   pathname: 'https@1.0.x',
+32 verbose parsed url   path: 'https@1.0.x',
+32 verbose parsed url   href: 'https@1.0.x' }
+33 verbose cache add name="cors" spec="2.7.x" args=["cors","2.7.x"]
+34 verbose parsed url { protocol: null,
+34 verbose parsed url   slashes: null,
+34 verbose parsed url   auth: null,
+34 verbose parsed url   host: null,
+34 verbose parsed url   port: null,
+34 verbose parsed url   hostname: null,
+34 verbose parsed url   hash: null,
+34 verbose parsed url   search: null,
+34 verbose parsed url   query: null,
+34 verbose parsed url   pathname: '2.7.x',
+34 verbose parsed url   path: '2.7.x',
+34 verbose parsed url   href: '2.7.x' }
+35 verbose addNamed [ 'cors', '2.7.x' ]
+36 verbose addNamed [ null, '>=2.7.0-0 <2.8.0-0' ]
+37 silly lockFile f4328c08-cors-2-7-x cors@2.7.x
+38 verbose lock cors@2.7.x /Users/hasudhakar/.npm/f4328c08-cors-2-7-x.lock
+39 verbose cache add [ 'request@2.58.x', null ]
+40 verbose cache add name=undefined spec="request@2.58.x" args=["request@2.58.x",null]
+41 verbose parsed url { protocol: null,
+41 verbose parsed url   slashes: null,
+41 verbose parsed url   auth: null,
+41 verbose parsed url   host: null,
+41 verbose parsed url   port: null,
+41 verbose parsed url   hostname: null,
+41 verbose parsed url   hash: null,
+41 verbose parsed url   search: null,
+41 verbose parsed url   query: null,
+41 verbose parsed url   pathname: 'request@2.58.x',
+41 verbose parsed url   path: 'request@2.58.x',
+41 verbose parsed url   href: 'request@2.58.x' }
+42 verbose cache add name="https" spec="1.0.x" args=["https","1.0.x"]
+43 verbose parsed url { protocol: null,
+43 verbose parsed url   slashes: null,
+43 verbose parsed url   auth: null,
+43 verbose parsed url   host: null,
+43 verbose parsed url   port: null,
+43 verbose parsed url   hostname: null,
+43 verbose parsed url   hash: null,
+43 verbose parsed url   search: null,
+43 verbose parsed url   query: null,
+43 verbose parsed url   pathname: '1.0.x',
+43 verbose parsed url   path: '1.0.x',
+43 verbose parsed url   href: '1.0.x' }
+44 verbose addNamed [ 'https', '1.0.x' ]
+45 verbose addNamed [ null, '>=1.0.0-0 <1.1.0-0' ]
+46 silly lockFile 6087de56-https-1-0-x https@1.0.x
+47 verbose lock https@1.0.x /Users/hasudhakar/.npm/6087de56-https-1-0-x.lock
+48 verbose cache add name="request" spec="2.58.x" args=["request","2.58.x"]
+49 verbose parsed url { protocol: null,
+49 verbose parsed url   slashes: null,
+49 verbose parsed url   auth: null,
+49 verbose parsed url   host: null,
+49 verbose parsed url   port: null,
+49 verbose parsed url   hostname: null,
+49 verbose parsed url   hash: null,
+49 verbose parsed url   search: null,
+49 verbose parsed url   query: null,
+49 verbose parsed url   pathname: '2.58.x',
+49 verbose parsed url   path: '2.58.x',
+49 verbose parsed url   href: '2.58.x' }
+50 verbose addNamed [ 'request', '2.58.x' ]
+51 verbose addNamed [ null, '>=2.58.0-0 <2.59.0-0' ]
+52 silly lockFile 70739e94-request-2-58-x request@2.58.x
+53 verbose lock request@2.58.x /Users/hasudhakar/.npm/70739e94-request-2-58-x.lock
+54 silly addNameRange { name: 'twitter', range: '>=1.2.0-0 <1.3.0-0', hasData: false }
+55 silly addNameRange { name: 'watson-developer-cloud',
+55 silly addNameRange   range: '>=0.9.0-0 <0.10.0-0',
+55 silly addNameRange   hasData: false }
+56 silly addNameRange { name: 'cors', range: '>=2.7.0-0 <2.8.0-0', hasData: false }
+57 verbose cache add [ 'http@0.0.x', null ]
+58 verbose cache add name=undefined spec="http@0.0.x" args=["http@0.0.x",null]
+59 verbose parsed url { protocol: null,
+59 verbose parsed url   slashes: null,
+59 verbose parsed url   auth: null,
+59 verbose parsed url   host: null,
+59 verbose parsed url   port: null,
+59 verbose parsed url   hostname: null,
+59 verbose parsed url   hash: null,
+59 verbose parsed url   search: null,
+59 verbose parsed url   query: null,
+59 verbose parsed url   pathname: 'http@0.0.x',
+59 verbose parsed url   path: 'http@0.0.x',
+59 verbose parsed url   href: 'http@0.0.x' }
+60 verbose cache add [ 'alchemy-api@1.2.x', null ]
+61 verbose cache add name=undefined spec="alchemy-api@1.2.x" args=["alchemy-api@1.2.x",null]
+62 verbose parsed url { protocol: null,
+62 verbose parsed url   slashes: null,
+62 verbose parsed url   auth: null,
+62 verbose parsed url   host: null,
+62 verbose parsed url   port: null,
+62 verbose parsed url   hostname: null,
+62 verbose parsed url   hash: null,
+62 verbose parsed url   search: null,
+62 verbose parsed url   query: null,
+62 verbose parsed url   pathname: 'alchemy-api@1.2.x',
+62 verbose parsed url   path: 'alchemy-api@1.2.x',
+62 verbose parsed url   href: 'alchemy-api@1.2.x' }
+63 verbose cache add [ 'sendgrid@1.8.0', null ]
+64 verbose cache add name=undefined spec="sendgrid@1.8.0" args=["sendgrid@1.8.0",null]
+65 verbose parsed url { protocol: null,
+65 verbose parsed url   slashes: null,
+65 verbose parsed url   auth: null,
+65 verbose parsed url   host: null,
+65 verbose parsed url   port: null,
+65 verbose parsed url   hostname: null,
+65 verbose parsed url   hash: null,
+65 verbose parsed url   search: null,
+65 verbose parsed url   query: null,
+65 verbose parsed url   pathname: 'sendgrid@1.8.0',
+65 verbose parsed url   path: 'sendgrid@1.8.0',
+65 verbose parsed url   href: 'sendgrid@1.8.0' }
+66 verbose cache add name="http" spec="0.0.x" args=["http","0.0.x"]
+67 verbose parsed url { protocol: null,
+67 verbose parsed url   slashes: null,
+67 verbose parsed url   auth: null,
+67 verbose parsed url   host: null,
+67 verbose parsed url   port: null,
+67 verbose parsed url   hostname: null,
+67 verbose parsed url   hash: null,
+67 verbose parsed url   search: null,
+67 verbose parsed url   query: null,
+67 verbose parsed url   pathname: '0.0.x',
+67 verbose parsed url   path: '0.0.x',
+67 verbose parsed url   href: '0.0.x' }
+68 verbose addNamed [ 'http', '0.0.x' ]
+69 verbose addNamed [ null, '>=0.0.0-0 <0.1.0-0' ]
+70 silly lockFile 2d9f5298-http-0-0-x http@0.0.x
+71 verbose lock http@0.0.x /Users/hasudhakar/.npm/2d9f5298-http-0-0-x.lock
+72 verbose cache add name="alchemy-api" spec="1.2.x" args=["alchemy-api","1.2.x"]
+73 verbose parsed url { protocol: null,
+73 verbose parsed url   slashes: null,
+73 verbose parsed url   auth: null,
+73 verbose parsed url   host: null,
+73 verbose parsed url   port: null,
+73 verbose parsed url   hostname: null,
+73 verbose parsed url   hash: null,
+73 verbose parsed url   search: null,
+73 verbose parsed url   query: null,
+73 verbose parsed url   pathname: '1.2.x',
+73 verbose parsed url   path: '1.2.x',
+73 verbose parsed url   href: '1.2.x' }
+74 verbose addNamed [ 'alchemy-api', '1.2.x' ]
+75 verbose addNamed [ null, '>=1.2.0-0 <1.3.0-0' ]
+76 silly lockFile 17c244b3-alchemy-api-1-2-x alchemy-api@1.2.x
+77 verbose lock alchemy-api@1.2.x /Users/hasudhakar/.npm/17c244b3-alchemy-api-1-2-x.lock
+78 verbose cache add [ 'twilio@2.2.1', null ]
+79 verbose cache add name=undefined spec="twilio@2.2.1" args=["twilio@2.2.1",null]
+80 verbose parsed url { protocol: null,
+80 verbose parsed url   slashes: null,
+80 verbose parsed url   auth: null,
+80 verbose parsed url   host: null,
+80 verbose parsed url   port: null,
+80 verbose parsed url   hostname: null,
+80 verbose parsed url   hash: null,
+80 verbose parsed url   search: null,
+80 verbose parsed url   query: null,
+80 verbose parsed url   pathname: 'twilio@2.2.1',
+80 verbose parsed url   path: 'twilio@2.2.1',
+80 verbose parsed url   href: 'twilio@2.2.1' }
+81 verbose cache add name="sendgrid" spec="1.8.0" args=["sendgrid","1.8.0"]
+82 verbose parsed url { protocol: null,
+82 verbose parsed url   slashes: null,
+82 verbose parsed url   auth: null,
+82 verbose parsed url   host: null,
+82 verbose parsed url   port: null,
+82 verbose parsed url   hostname: null,
+82 verbose parsed url   hash: null,
+82 verbose parsed url   search: null,
+82 verbose parsed url   query: null,
+82 verbose parsed url   pathname: '1.8.0',
+82 verbose parsed url   path: '1.8.0',
+82 verbose parsed url   href: '1.8.0' }
+83 verbose addNamed [ 'sendgrid', '1.8.0' ]
+84 verbose addNamed [ '1.8.0', '1.8.0' ]
+85 silly lockFile 4bb5a619-sendgrid-1-8-0 sendgrid@1.8.0
+86 verbose lock sendgrid@1.8.0 /Users/hasudhakar/.npm/4bb5a619-sendgrid-1-8-0.lock
+87 silly addNameRange { name: 'https', range: '>=1.0.0-0 <1.1.0-0', hasData: false }
+88 silly addNameRange { name: 'request',
+88 silly addNameRange   range: '>=2.58.0-0 <2.59.0-0',
+88 silly addNameRange   hasData: false }
+89 verbose cache add [ 'twit@2.0.x', null ]
+90 verbose cache add name=undefined spec="twit@2.0.x" args=["twit@2.0.x",null]
+91 verbose parsed url { protocol: null,
+91 verbose parsed url   slashes: null,
+91 verbose parsed url   auth: null,
+91 verbose parsed url   host: null,
+91 verbose parsed url   port: null,
+91 verbose parsed url   hostname: null,
+91 verbose parsed url   hash: null,
+91 verbose parsed url   search: null,
+91 verbose parsed url   query: null,
+91 verbose parsed url   pathname: 'twit@2.0.x',
+91 verbose parsed url   path: 'twit@2.0.x',
+91 verbose parsed url   href: 'twit@2.0.x' }
+92 verbose cache add name="twilio" spec="2.2.1" args=["twilio","2.2.1"]
+93 verbose parsed url { protocol: null,
+93 verbose parsed url   slashes: null,
+93 verbose parsed url   auth: null,
+93 verbose parsed url   host: null,
+93 verbose parsed url   port: null,
+93 verbose parsed url   hostname: null,
+93 verbose parsed url   hash: null,
+93 verbose parsed url   search: null,
+93 verbose parsed url   query: null,
+93 verbose parsed url   pathname: '2.2.1',
+93 verbose parsed url   path: '2.2.1',
+93 verbose parsed url   href: '2.2.1' }
+94 verbose addNamed [ 'twilio', '2.2.1' ]
+95 verbose addNamed [ '2.2.1', '2.2.1' ]
+96 silly lockFile c22e80a6-twilio-2-2-1 twilio@2.2.1
+97 verbose lock twilio@2.2.1 /Users/hasudhakar/.npm/c22e80a6-twilio-2-2-1.lock
+98 silly addNameRange { name: 'http', range: '>=0.0.0-0 <0.1.0-0', hasData: false }
+99 silly addNameRange { name: 'alchemy-api',
+99 silly addNameRange   range: '>=1.2.0-0 <1.3.0-0',
+99 silly addNameRange   hasData: false }
+100 verbose cache add [ 'oauth@0.9.x', null ]
+101 verbose cache add name=undefined spec="oauth@0.9.x" args=["oauth@0.9.x",null]
+102 verbose parsed url { protocol: null,
+102 verbose parsed url   slashes: null,
+102 verbose parsed url   auth: null,
+102 verbose parsed url   host: null,
+102 verbose parsed url   port: null,
+102 verbose parsed url   hostname: null,
+102 verbose parsed url   hash: null,
+102 verbose parsed url   search: null,
+102 verbose parsed url   query: null,
+102 verbose parsed url   pathname: 'oauth@0.9.x',
+102 verbose parsed url   path: 'oauth@0.9.x',
+102 verbose parsed url   href: 'oauth@0.9.x' }
+103 verbose cache add name="twit" spec="2.0.x" args=["twit","2.0.x"]
+104 verbose parsed url { protocol: null,
+104 verbose parsed url   slashes: null,
+104 verbose parsed url   auth: null,
+104 verbose parsed url   host: null,
+104 verbose parsed url   port: null,
+104 verbose parsed url   hostname: null,
+104 verbose parsed url   hash: null,
+104 verbose parsed url   search: null,
+104 verbose parsed url   query: null,
+104 verbose parsed url   pathname: '2.0.x',
+104 verbose parsed url   path: '2.0.x',
+104 verbose parsed url   href: '2.0.x' }
+105 verbose addNamed [ 'twit', '2.0.x' ]
+106 verbose addNamed [ null, '>=2.0.0-0 <2.1.0-0' ]
+107 silly lockFile 293ebf55-twit-2-0-x twit@2.0.x
+108 verbose lock twit@2.0.x /Users/hasudhakar/.npm/293ebf55-twit-2-0-x.lock
+109 verbose cache add [ 'node-bing-api@2.0.x', null ]
+110 verbose cache add name=undefined spec="node-bing-api@2.0.x" args=["node-bing-api@2.0.x",null]
+111 verbose parsed url { protocol: null,
+111 verbose parsed url   slashes: null,
+111 verbose parsed url   auth: null,
+111 verbose parsed url   host: null,
+111 verbose parsed url   port: null,
+111 verbose parsed url   hostname: null,
+111 verbose parsed url   hash: null,
+111 verbose parsed url   search: null,
+111 verbose parsed url   query: null,
+111 verbose parsed url   pathname: 'node-bing-api@2.0.x',
+111 verbose parsed url   path: 'node-bing-api@2.0.x',
+111 verbose parsed url   href: 'node-bing-api@2.0.x' }
+112 verbose cache add name="oauth" spec="0.9.x" args=["oauth","0.9.x"]
+113 verbose parsed url { protocol: null,
+113 verbose parsed url   slashes: null,
+113 verbose parsed url   auth: null,
+113 verbose parsed url   host: null,
+113 verbose parsed url   port: null,
+113 verbose parsed url   hostname: null,
+113 verbose parsed url   hash: null,
+113 verbose parsed url   search: null,
+113 verbose parsed url   query: null,
+113 verbose parsed url   pathname: '0.9.x',
+113 verbose parsed url   path: '0.9.x',
+113 verbose parsed url   href: '0.9.x' }
+114 verbose addNamed [ 'oauth', '0.9.x' ]
+115 verbose addNamed [ null, '>=0.9.0-0 <0.10.0-0' ]
+116 silly lockFile 657e5595-oauth-0-9-x oauth@0.9.x
+117 verbose lock oauth@0.9.x /Users/hasudhakar/.npm/657e5595-oauth-0-9-x.lock
+118 verbose request where is /twitter
+119 verbose request registry https://registry.npmjs.org/
+120 verbose request id 9bc25ada58ab454b
+121 verbose url raw /twitter
+122 verbose url resolving [ 'https://registry.npmjs.org/', './twitter' ]
+123 verbose url resolved https://registry.npmjs.org/twitter
+124 verbose request where is https://registry.npmjs.org/twitter
+125 info trying registry request attempt 1 at 11:51:17
+126 verbose etag "CP9NF0K58MQP6MWI5RPX9R8VM"
+127 http GET https://registry.npmjs.org/twitter
+128 verbose cache add [ 'socket.io@1.3.x', null ]
+129 verbose cache add name=undefined spec="socket.io@1.3.x" args=["socket.io@1.3.x",null]
+130 verbose parsed url { protocol: null,
+130 verbose parsed url   slashes: null,
+130 verbose parsed url   auth: null,
+130 verbose parsed url   host: null,
+130 verbose parsed url   port: null,
+130 verbose parsed url   hostname: null,
+130 verbose parsed url   hash: null,
+130 verbose parsed url   search: null,
+130 verbose parsed url   query: null,
+130 verbose parsed url   pathname: 'socket.io@1.3.x',
+130 verbose parsed url   path: 'socket.io@1.3.x',
+130 verbose parsed url   href: 'socket.io@1.3.x' }
+131 verbose cache add [ 'node-tweet-stream@1.8.x', null ]
+132 verbose cache add name=undefined spec="node-tweet-stream@1.8.x" args=["node-tweet-stream@1.8.x",null]
+133 verbose parsed url { protocol: null,
+133 verbose parsed url   slashes: null,
+133 verbose parsed url   auth: null,
+133 verbose parsed url   host: null,
+133 verbose parsed url   port: null,
+133 verbose parsed url   hostname: null,
+133 verbose parsed url   hash: null,
+133 verbose parsed url   search: null,
+133 verbose parsed url   query: null,
+133 verbose parsed url   pathname: 'node-tweet-stream@1.8.x',
+133 verbose parsed url   path: 'node-tweet-stream@1.8.x',
+133 verbose parsed url   href: 'node-tweet-stream@1.8.x' }
+134 verbose cache add [ 'longjohn@0.2.x', null ]
+135 verbose cache add name=undefined spec="longjohn@0.2.x" args=["longjohn@0.2.x",null]
+136 verbose parsed url { protocol: null,
+136 verbose parsed url   slashes: null,
+136 verbose parsed url   auth: null,
+136 verbose parsed url   host: null,
+136 verbose parsed url   port: null,
+136 verbose parsed url   hostname: null,
+136 verbose parsed url   hash: null,
+136 verbose parsed url   search: null,
+136 verbose parsed url   query: null,
+136 verbose parsed url   pathname: 'longjohn@0.2.x',
+136 verbose parsed url   path: 'longjohn@0.2.x',
+136 verbose parsed url   href: 'longjohn@0.2.x' }
+137 verbose cache add [ 'express@4.12.x', null ]
+138 verbose cache add name=undefined spec="express@4.12.x" args=["express@4.12.x",null]
+139 verbose parsed url { protocol: null,
+139 verbose parsed url   slashes: null,
+139 verbose parsed url   auth: null,
+139 verbose parsed url   host: null,
+139 verbose parsed url   port: null,
+139 verbose parsed url   hostname: null,
+139 verbose parsed url   hash: null,
+139 verbose parsed url   search: null,
+139 verbose parsed url   query: null,
+139 verbose parsed url   pathname: 'express@4.12.x',
+139 verbose parsed url   path: 'express@4.12.x',
+139 verbose parsed url   href: 'express@4.12.x' }
+140 verbose cache add [ 'cfenv@1.0.x', null ]
+141 verbose cache add name=undefined spec="cfenv@1.0.x" args=["cfenv@1.0.x",null]
+142 verbose parsed url { protocol: null,
+142 verbose parsed url   slashes: null,
+142 verbose parsed url   auth: null,
+142 verbose parsed url   host: null,
+142 verbose parsed url   port: null,
+142 verbose parsed url   hostname: null,
+142 verbose parsed url   hash: null,
+142 verbose parsed url   search: null,
+142 verbose parsed url   query: null,
+142 verbose parsed url   pathname: 'cfenv@1.0.x',
+142 verbose parsed url   path: 'cfenv@1.0.x',
+142 verbose parsed url   href: 'cfenv@1.0.x' }
+143 verbose cache add name="node-bing-api" spec="2.0.x" args=["node-bing-api","2.0.x"]
+144 verbose parsed url { protocol: null,
+144 verbose parsed url   slashes: null,
+144 verbose parsed url   auth: null,
+144 verbose parsed url   host: null,
+144 verbose parsed url   port: null,
+144 verbose parsed url   hostname: null,
+144 verbose parsed url   hash: null,
+144 verbose parsed url   search: null,
+144 verbose parsed url   query: null,
+144 verbose parsed url   pathname: '2.0.x',
+144 verbose parsed url   path: '2.0.x',
+144 verbose parsed url   href: '2.0.x' }
+145 verbose addNamed [ 'node-bing-api', '2.0.x' ]
+146 verbose addNamed [ null, '>=2.0.0-0 <2.1.0-0' ]
+147 silly lockFile 624499fd-node-bing-api-2-0-x node-bing-api@2.0.x
+148 verbose lock node-bing-api@2.0.x /Users/hasudhakar/.npm/624499fd-node-bing-api-2-0-x.lock
+149 verbose request where is /watson-developer-cloud
+150 verbose request registry https://registry.npmjs.org/
+151 verbose url raw /watson-developer-cloud
+152 verbose url resolving [ 'https://registry.npmjs.org/', './watson-developer-cloud' ]
+153 verbose url resolved https://registry.npmjs.org/watson-developer-cloud
+154 verbose request where is https://registry.npmjs.org/watson-developer-cloud
+155 info trying registry request attempt 1 at 11:51:17
+156 verbose etag "BSVE57IWKLKGA4QLX9L4DWKPK"
+157 http GET https://registry.npmjs.org/watson-developer-cloud
+158 verbose request where is /cors
+159 verbose request registry https://registry.npmjs.org/
+160 verbose url raw /cors
+161 verbose url resolving [ 'https://registry.npmjs.org/', './cors' ]
+162 verbose url resolved https://registry.npmjs.org/cors
+163 verbose request where is https://registry.npmjs.org/cors
+164 info trying registry request attempt 1 at 11:51:17
+165 verbose etag "4TX9GW9AFFROTCMO0TT1OU4UW"
+166 http GET https://registry.npmjs.org/cors
+167 silly addNameRange { name: 'twit', range: '>=2.0.0-0 <2.1.0-0', hasData: false }
+168 verbose cache add name="socket.io" spec="1.3.x" args=["socket.io","1.3.x"]
+169 verbose parsed url { protocol: null,
+169 verbose parsed url   slashes: null,
+169 verbose parsed url   auth: null,
+169 verbose parsed url   host: null,
+169 verbose parsed url   port: null,
+169 verbose parsed url   hostname: null,
+169 verbose parsed url   hash: null,
+169 verbose parsed url   search: null,
+169 verbose parsed url   query: null,
+169 verbose parsed url   pathname: '1.3.x',
+169 verbose parsed url   path: '1.3.x',
+169 verbose parsed url   href: '1.3.x' }
+170 verbose addNamed [ 'socket.io', '1.3.x' ]
+171 verbose addNamed [ null, '>=1.3.0-0 <1.4.0-0' ]
+172 silly lockFile 4cbe36ca-socket-io-1-3-x socket.io@1.3.x
+173 verbose lock socket.io@1.3.x /Users/hasudhakar/.npm/4cbe36ca-socket-io-1-3-x.lock
+174 verbose cache add name="node-tweet-stream" spec="1.8.x" args=["node-tweet-stream","1.8.x"]
+175 verbose parsed url { protocol: null,
+175 verbose parsed url   slashes: null,
+175 verbose parsed url   auth: null,
+175 verbose parsed url   host: null,
+175 verbose parsed url   port: null,
+175 verbose parsed url   hostname: null,
+175 verbose parsed url   hash: null,
+175 verbose parsed url   search: null,
+175 verbose parsed url   query: null,
+175 verbose parsed url   pathname: '1.8.x',
+175 verbose parsed url   path: '1.8.x',
+175 verbose parsed url   href: '1.8.x' }
+176 verbose addNamed [ 'node-tweet-stream', '1.8.x' ]
+177 verbose addNamed [ null, '>=1.8.0-0 <1.9.0-0' ]
+178 silly lockFile ed046224-node-tweet-stream-1-8-x node-tweet-stream@1.8.x
+179 verbose lock node-tweet-stream@1.8.x /Users/hasudhakar/.npm/ed046224-node-tweet-stream-1-8-x.lock
+180 verbose cache add name="longjohn" spec="0.2.x" args=["longjohn","0.2.x"]
+181 verbose parsed url { protocol: null,
+181 verbose parsed url   slashes: null,
+181 verbose parsed url   auth: null,
+181 verbose parsed url   host: null,
+181 verbose parsed url   port: null,
+181 verbose parsed url   hostname: null,
+181 verbose parsed url   hash: null,
+181 verbose parsed url   search: null,
+181 verbose parsed url   query: null,
+181 verbose parsed url   pathname: '0.2.x',
+181 verbose parsed url   path: '0.2.x',
+181 verbose parsed url   href: '0.2.x' }
+182 verbose addNamed [ 'longjohn', '0.2.x' ]
+183 verbose addNamed [ null, '>=0.2.0-0 <0.3.0-0' ]
+184 silly lockFile 7b647822-longjohn-0-2-x longjohn@0.2.x
+185 verbose lock longjohn@0.2.x /Users/hasudhakar/.npm/7b647822-longjohn-0-2-x.lock
+186 verbose cache add name="express" spec="4.12.x" args=["express","4.12.x"]
+187 verbose parsed url { protocol: null,
+187 verbose parsed url   slashes: null,
+187 verbose parsed url   auth: null,
+187 verbose parsed url   host: null,
+187 verbose parsed url   port: null,
+187 verbose parsed url   hostname: null,
+187 verbose parsed url   hash: null,
+187 verbose parsed url   search: null,
+187 verbose parsed url   query: null,
+187 verbose parsed url   pathname: '4.12.x',
+187 verbose parsed url   path: '4.12.x',
+187 verbose parsed url   href: '4.12.x' }
+188 verbose addNamed [ 'express', '4.12.x' ]
+189 verbose addNamed [ null, '>=4.12.0-0 <4.13.0-0' ]
+190 silly lockFile aa372466-express-4-12-x express@4.12.x
+191 verbose lock express@4.12.x /Users/hasudhakar/.npm/aa372466-express-4-12-x.lock
+192 verbose cache add name="cfenv" spec="1.0.x" args=["cfenv","1.0.x"]
+193 verbose parsed url { protocol: null,
+193 verbose parsed url   slashes: null,
+193 verbose parsed url   auth: null,
+193 verbose parsed url   host: null,
+193 verbose parsed url   port: null,
+193 verbose parsed url   hostname: null,
+193 verbose parsed url   hash: null,
+193 verbose parsed url   search: null,
+193 verbose parsed url   query: null,
+193 verbose parsed url   pathname: '1.0.x',
+193 verbose parsed url   path: '1.0.x',
+193 verbose parsed url   href: '1.0.x' }
+194 verbose addNamed [ 'cfenv', '1.0.x' ]
+195 verbose addNamed [ null, '>=1.0.0-0 <1.1.0-0' ]
+196 silly lockFile 0a17ca23-cfenv-1-0-x cfenv@1.0.x
+197 verbose lock cfenv@1.0.x /Users/hasudhakar/.npm/0a17ca23-cfenv-1-0-x.lock
+198 silly addNameRange { name: 'oauth', range: '>=0.9.0-0 <0.10.0-0', hasData: false }
+199 silly addNameRange { name: 'node-bing-api',
+199 silly addNameRange   range: '>=2.0.0-0 <2.1.0-0',
+199 silly addNameRange   hasData: false }
+200 verbose request where is /request
+201 verbose request registry https://registry.npmjs.org/
+202 verbose url raw /request
+203 verbose url resolving [ 'https://registry.npmjs.org/', './request' ]
+204 verbose url resolved https://registry.npmjs.org/request
+205 verbose request where is https://registry.npmjs.org/request
+206 info trying registry request attempt 1 at 11:51:17
+207 verbose etag "8IYAH9CGRFR1H4CVB0TZ8YS81"
+208 http GET https://registry.npmjs.org/request
+209 verbose request where is /https
+210 verbose request registry https://registry.npmjs.org/
+211 verbose url raw /https
+212 verbose url resolving [ 'https://registry.npmjs.org/', './https' ]
+213 verbose url resolved https://registry.npmjs.org/https
+214 verbose request where is https://registry.npmjs.org/https
+215 info trying registry request attempt 1 at 11:51:17
+216 verbose etag "E5A2P6GKYAVZBDCJ84DJPDERF"
+217 http GET https://registry.npmjs.org/https
+218 silly addNameRange { name: 'socket.io',
+218 silly addNameRange   range: '>=1.3.0-0 <1.4.0-0',
+218 silly addNameRange   hasData: false }
+219 silly addNameRange { name: 'node-tweet-stream',
+219 silly addNameRange   range: '>=1.8.0-0 <1.9.0-0',
+219 silly addNameRange   hasData: false }
+220 silly addNameRange { name: 'longjohn', range: '>=0.2.0-0 <0.3.0-0', hasData: false }
+221 silly addNameRange { name: 'express',
+221 silly addNameRange   range: '>=4.12.0-0 <4.13.0-0',
+221 silly addNameRange   hasData: false }
+222 silly addNameRange { name: 'cfenv', range: '>=1.0.0-0 <1.1.0-0', hasData: false }
+223 verbose request where is /alchemy-api
+224 verbose request registry https://registry.npmjs.org/
+225 verbose url raw /alchemy-api
+226 verbose url resolving [ 'https://registry.npmjs.org/', './alchemy-api' ]
+227 verbose url resolved https://registry.npmjs.org/alchemy-api
+228 verbose request where is https://registry.npmjs.org/alchemy-api
+229 info trying registry request attempt 1 at 11:51:17
+230 verbose etag "1QHHH2RI4A6B2OI00W4GJGQUR"
+231 http GET https://registry.npmjs.org/alchemy-api
+232 verbose request where is /http
+233 verbose request registry https://registry.npmjs.org/
+234 verbose url raw /http
+235 verbose url resolving [ 'https://registry.npmjs.org/', './http' ]
+236 verbose url resolved https://registry.npmjs.org/http
+237 verbose request where is https://registry.npmjs.org/http
+238 info trying registry request attempt 1 at 11:51:18
+239 verbose etag "9ARRJ1G4SWEZRN9FK6352ZEYA"
+240 http GET https://registry.npmjs.org/http
+241 verbose request where is /sendgrid
+242 verbose request registry https://registry.npmjs.org/
+243 verbose url raw /sendgrid
+244 verbose url resolving [ 'https://registry.npmjs.org/', './sendgrid' ]
+245 verbose url resolved https://registry.npmjs.org/sendgrid
+246 verbose request where is https://registry.npmjs.org/sendgrid
+247 info trying registry request attempt 1 at 11:51:18
+248 verbose etag "DB5TTI6BJKJB6JVC4676QJ6M1"
+249 http GET https://registry.npmjs.org/sendgrid
+250 verbose request where is /twilio
+251 verbose request registry https://registry.npmjs.org/
+252 verbose url raw /twilio
+253 verbose url resolving [ 'https://registry.npmjs.org/', './twilio' ]
+254 verbose url resolved https://registry.npmjs.org/twilio
+255 verbose request where is https://registry.npmjs.org/twilio
+256 info trying registry request attempt 1 at 11:51:18
+257 verbose etag "B85JTLDOZ136OI9YYZTTVV4UJ"
+258 http GET https://registry.npmjs.org/twilio
+259 verbose request where is /twit
+260 verbose request registry https://registry.npmjs.org/
+261 verbose url raw /twit
+262 verbose url resolving [ 'https://registry.npmjs.org/', './twit' ]
+263 verbose url resolved https://registry.npmjs.org/twit
+264 verbose request where is https://registry.npmjs.org/twit
+265 info trying registry request attempt 1 at 11:51:18
+266 verbose etag "95UFSV9KPH709VI6W64BHMBL5"
+267 http GET https://registry.npmjs.org/twit
+268 verbose request where is /oauth
+269 verbose request registry https://registry.npmjs.org/
+270 verbose url raw /oauth
+271 verbose url resolving [ 'https://registry.npmjs.org/', './oauth' ]
+272 verbose url resolved https://registry.npmjs.org/oauth
+273 verbose request where is https://registry.npmjs.org/oauth
+274 info trying registry request attempt 1 at 11:51:18
+275 verbose etag "6MOOR146U0S0VIRVL27CIPR0Y"
+276 http GET https://registry.npmjs.org/oauth
+277 verbose request where is /node-bing-api
+278 verbose request registry https://registry.npmjs.org/
+279 verbose url raw /node-bing-api
+280 verbose url resolving [ 'https://registry.npmjs.org/', './node-bing-api' ]
+281 verbose url resolved https://registry.npmjs.org/node-bing-api
+282 verbose request where is https://registry.npmjs.org/node-bing-api
+283 info trying registry request attempt 1 at 11:51:18
+284 verbose etag "DAOP4C9VRRRHO6VY4TMH1BYDH"
+285 http GET https://registry.npmjs.org/node-bing-api
+286 verbose request where is /node-tweet-stream
+287 verbose request registry https://registry.npmjs.org/
+288 verbose url raw /node-tweet-stream
+289 verbose url resolving [ 'https://registry.npmjs.org/', './node-tweet-stream' ]
+290 verbose url resolved https://registry.npmjs.org/node-tweet-stream
+291 verbose request where is https://registry.npmjs.org/node-tweet-stream
+292 info trying registry request attempt 1 at 11:51:18
+293 verbose etag "BT0ZORH2WI6RF5SPV5VA1TTUJ"
+294 http GET https://registry.npmjs.org/node-tweet-stream
+295 verbose request where is /longjohn
+296 verbose request registry https://registry.npmjs.org/
+297 verbose url raw /longjohn
+298 verbose url resolving [ 'https://registry.npmjs.org/', './longjohn' ]
+299 verbose url resolved https://registry.npmjs.org/longjohn
+300 verbose request where is https://registry.npmjs.org/longjohn
+301 info trying registry request attempt 1 at 11:51:18
+302 verbose etag "654NAFS9FHFMIQ7VNV0RW2WR1"
+303 http GET https://registry.npmjs.org/longjohn
+304 verbose request where is /socket.io
+305 verbose request registry https://registry.npmjs.org/
+306 verbose url raw /socket.io
+307 verbose url resolving [ 'https://registry.npmjs.org/', './socket.io' ]
+308 verbose url resolved https://registry.npmjs.org/socket.io
+309 verbose request where is https://registry.npmjs.org/socket.io
+310 info trying registry request attempt 1 at 11:51:18
+311 verbose etag "7PKNYNNCYG3YYKMR5HBZX5JDW"
+312 http GET https://registry.npmjs.org/socket.io
+313 verbose request where is /cfenv
+314 verbose request registry https://registry.npmjs.org/
+315 verbose url raw /cfenv
+316 verbose url resolving [ 'https://registry.npmjs.org/', './cfenv' ]
+317 verbose url resolved https://registry.npmjs.org/cfenv
+318 verbose request where is https://registry.npmjs.org/cfenv
+319 info trying registry request attempt 1 at 11:51:18
+320 verbose etag "43RNPTXGIGBT26JTXIABXYWJ2"
+321 http GET https://registry.npmjs.org/cfenv
+322 verbose request where is /express
+323 verbose request registry https://registry.npmjs.org/
+324 verbose url raw /express
+325 verbose url resolving [ 'https://registry.npmjs.org/', './express' ]
+326 verbose url resolved https://registry.npmjs.org/express
+327 verbose request where is https://registry.npmjs.org/express
+328 info trying registry request attempt 1 at 11:51:18
+329 verbose etag "2LRBC4CY6C8QWO0D7DCP2GLWJ"
+330 http GET https://registry.npmjs.org/express
+331 http 304 https://registry.npmjs.org/https
+332 silly registry.get cb [ 304,
+332 silly registry.get   { date: 'Sat, 15 Aug 2015 16:51:09 GMT',
+332 silly registry.get     via: '1.1 varnish',
+332 silly registry.get     'cache-control': 'max-age=60',
+332 silly registry.get     etag: '"E5A2P6GKYAVZBDCJ84DJPDERF"',
+332 silly registry.get     age: '0',
+332 silly registry.get     connection: 'keep-alive',
+332 silly registry.get     'x-served-by': 'cache-lax1431-LAX',
+332 silly registry.get     'x-cache': 'MISS',
+332 silly registry.get     'x-cache-hits': '0',
+332 silly registry.get     'x-timer': 'S1439657469.550782,VS0,VE45',
+332 silly registry.get     vary: 'Accept' } ]
+333 verbose etag https://registry.npmjs.org/https from cache
+334 silly addNameRange number 2 { name: 'https', range: '>=1.0.0-0 <1.1.0-0', hasData: true }
+335 silly addNameRange versions [ 'https', [ '1.0.0' ] ]
+336 verbose addNamed [ 'https', '1.0.0' ]
+337 verbose addNamed [ '1.0.0', '1.0.0' ]
+338 silly lockFile cd9a39a1-https-1-0-0 https@1.0.0
+339 verbose lock https@1.0.0 /Users/hasudhakar/.npm/cd9a39a1-https-1-0-0.lock
+340 http 200 https://registry.npmjs.org/request
+341 silly registry.get cb [ 200,
+341 silly registry.get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+341 silly registry.get     etag: '"4D900EZ0O40TE60I9SABCVYTU"',
+341 silly registry.get     'content-type': 'application/json',
+341 silly registry.get     'cache-control': 'max-age=60',
+341 silly registry.get     'content-length': '161115',
+341 silly registry.get     'accept-ranges': 'bytes',
+341 silly registry.get     date: 'Sat, 15 Aug 2015 16:51:09 GMT',
+341 silly registry.get     via: '1.1 varnish',
+341 silly registry.get     age: '41',
+341 silly registry.get     connection: 'keep-alive',
+341 silly registry.get     'x-served-by': 'cache-lax1425-LAX',
+341 silly registry.get     'x-cache': 'HIT',
+341 silly registry.get     'x-cache-hits': '1',
+341 silly registry.get     'x-timer': 'S1439657469.535994,VS0,VE1',
+341 silly registry.get     vary: 'Accept' } ]
+342 silly lockFile cd9a39a1-https-1-0-0 https@1.0.0
+343 silly lockFile cd9a39a1-https-1-0-0 https@1.0.0
+344 silly lockFile 6087de56-https-1-0-x https@1.0.x
+345 silly lockFile 6087de56-https-1-0-x https@1.0.x
+346 silly addNameRange number 2 { name: 'request', range: '>=2.58.0-0 <2.59.0-0', hasData: true }
+347 silly addNameRange versions [ 'request',
+347 silly addNameRange   [ '0.10.0',
+347 silly addNameRange     '0.8.3',
+347 silly addNameRange     '0.9.0',
+347 silly addNameRange     '0.9.1',
+347 silly addNameRange     '0.9.5',
+347 silly addNameRange     '1.0.0',
+347 silly addNameRange     '1.1.0',
+347 silly addNameRange     '1.1.1',
+347 silly addNameRange     '1.2.0',
+347 silly addNameRange     '1.9.0',
+347 silly addNameRange     '1.9.1',
+347 silly addNameRange     '1.9.2',
+347 silly addNameRange     '1.9.3',
+347 silly addNameRange     '1.9.5',
+347 silly addNameRange     '1.9.7',
+347 silly addNameRange     '1.9.8',
+347 silly addNameRange     '1.9.9',
+347 silly addNameRange     '2.0.0',
+347 silly addNameRange     '2.0.1',
+347 silly addNameRange     '2.0.2',
+347 silly addNameRange     '2.0.3',
+347 silly addNameRange     '2.0.4',
+347 silly addNameRange     '2.0.5',
+347 silly addNameRange     '2.1.0',
+347 silly addNameRange     '2.1.1',
+347 silly addNameRange     '2.2.0',
+347 silly addNameRange     '2.2.5',
+347 silly addNameRange     '2.2.6',
+347 silly addNameRange     '2.2.9',
+347 silly addNameRange     '2.9.0',
+347 silly addNameRange     '2.9.1',
+347 silly addNameRange     '2.9.2',
+347 silly addNameRange     '2.9.3',
+347 silly addNameRange     '2.9.100',
+347 silly addNameRange     '2.9.150',
+347 silly addNameRange     '2.9.151',
+347 silly addNameRange     '2.9.152',
+347 silly addNameRange     '2.9.153',
+347 silly addNameRange     '2.9.200',
+347 silly addNameRange     '2.9.201',
+347 silly addNameRange     '2.9.202',
+347 silly addNameRange     '2.9.203',
+347 silly addNameRange     '2.10.0',
+347 silly addNameRange     '2.11.0',
+347 silly addNameRange     '2.11.1',
+347 silly addNameRange     '2.11.2',
+347 silly addNameRange     '2.11.3',
+347 silly addNameRange     '2.11.4',
+347 silly addNameRange     '2.12.0',
+347 silly addNameRange     '2.14.0',
+347 silly addNameRange     '2.16.0',
+347 silly addNameRange     '2.16.2',
+347 silly addNameRange     '2.16.4',
+347 silly addNameRange     '2.16.6',
+347 silly addNameRange     '2.18.0',
+347 silly addNameRange     '2.19.0',
+347 silly addNameRange     '2.20.0',
+347 silly addNameRange     '2.21.0',
+347 silly addNameRange     '2.22.0',
+347 silly addNameRange     '2.23.0',
+347 silly addNameRange     '2.24.0',
+347 silly addNameRange     '2.25.0',
+347 silly addNameRange     '2.26.0',
+347 silly addNameRange     '2.27.0',
+347 silly addNameRange     '2.28.0',
+347 silly addNameRange     '2.29.0',
+347 silly addNameRange     '2.30.0',
+347 silly addNameRange     '2.31.0',
+347 silly addNameRange     '2.32.0',
+347 silly addNameRange     '2.33.0',
+347 silly addNameRange     '2.34.0',
+347 silly addNameRange     '2.35.0',
+347 silly addNameRange     '2.36.0',
+347 silly addNameRange     '2.37.0',
+347 silly addNameRange     '2.38.0',
+347 silly addNameRange     '2.39.0',
+347 silly addNameRange     '2.40.0',
+347 silly addNameRange     '2.41.0',
+347 silly addNameRange     '2.42.0',
+347 silly addNameRange     '2.43.0',
+347 silly addNameRange     '2.44.0',
+347 silly addNameRange     '2.45.0',
+347 silly addNameRange     '2.46.0',
+347 silly addNameRange     '2.47.0',
+347 silly addNameRange     '2.48.0',
+347 silly addNameRange     '2.49.0',
+347 silly addNameRange     '2.50.0',
+347 silly addNameRange     '2.51.0',
+347 silly addNameRange     '2.52.0',
+347 silly addNameRange     '2.53.0',
+347 silly addNameRange     '2.54.0',
+347 silly addNameRange     '2.55.0',
+347 silly addNameRange     '2.56.0',
+347 silly addNameRange     '2.57.0',
+347 silly addNameRange     '2.58.0',
+347 silly addNameRange     '2.59.0',
+347 silly addNameRange     '2.60.0' ] ]
+348 verbose addNamed [ 'request', '2.58.0' ]
+349 verbose addNamed [ '2.58.0', '2.58.0' ]
+350 silly lockFile 5fb2c8e3-request-2-58-0 request@2.58.0
+351 verbose lock request@2.58.0 /Users/hasudhakar/.npm/5fb2c8e3-request-2-58-0.lock
+352 silly lockFile 5fb2c8e3-request-2-58-0 request@2.58.0
+353 silly lockFile 5fb2c8e3-request-2-58-0 request@2.58.0
+354 silly lockFile 70739e94-request-2-58-x request@2.58.x
+355 silly lockFile 70739e94-request-2-58-x request@2.58.x
+356 http 304 https://registry.npmjs.org/cors
+357 silly registry.get cb [ 304,
+357 silly registry.get   { date: 'Sat, 15 Aug 2015 16:51:09 GMT',
+357 silly registry.get     via: '1.1 varnish',
+357 silly registry.get     'cache-control': 'max-age=60',
+357 silly registry.get     etag: '"4TX9GW9AFFROTCMO0TT1OU4UW"',
+357 silly registry.get     age: '0',
+357 silly registry.get     connection: 'keep-alive',
+357 silly registry.get     'x-served-by': 'cache-lax1430-LAX',
+357 silly registry.get     'x-cache': 'HIT',
+357 silly registry.get     'x-cache-hits': '1',
+357 silly registry.get     'x-timer': 'S1439657469.535000,VS0,VE192',
+357 silly registry.get     vary: 'Accept' } ]
+358 verbose etag https://registry.npmjs.org/cors from cache
+359 http 304 https://registry.npmjs.org/http
+360 silly registry.get cb [ 304,
+360 silly registry.get   { date: 'Sat, 15 Aug 2015 16:51:09 GMT',
+360 silly registry.get     via: '1.1 varnish',
+360 silly registry.get     'cache-control': 'max-age=60',
+360 silly registry.get     etag: '"9ARRJ1G4SWEZRN9FK6352ZEYA"',
+360 silly registry.get     age: '0',
+360 silly registry.get     connection: 'keep-alive',
+360 silly registry.get     'x-served-by': 'cache-lax1425-LAX',
+360 silly registry.get     'x-cache': 'MISS',
+360 silly registry.get     'x-cache-hits': '0',
+360 silly registry.get     'x-timer': 'S1439657469.641092,VS0,VE89',
+360 silly registry.get     vary: 'Accept' } ]
+361 verbose etag https://registry.npmjs.org/http from cache
+362 silly addNameRange number 2 { name: 'http', range: '>=0.0.0-0 <0.1.0-0', hasData: true }
+363 silly addNameRange versions [ 'http', [ '0.0.0' ] ]
+364 verbose addNamed [ 'http', '0.0.0' ]
+365 verbose addNamed [ '0.0.0', '0.0.0' ]
+366 silly lockFile 5c64bf45-http-0-0-0 http@0.0.0
+367 verbose lock http@0.0.0 /Users/hasudhakar/.npm/5c64bf45-http-0-0-0.lock
+368 silly addNameRange number 2 { name: 'cors', range: '>=2.7.0-0 <2.8.0-0', hasData: true }
+369 silly addNameRange versions [ 'cors',
+369 silly addNameRange   [ '0.0.1',
+369 silly addNameRange     '0.0.2',
+369 silly addNameRange     '0.0.3',
+369 silly addNameRange     '0.0.4',
+369 silly addNameRange     '0.0.5',
+369 silly addNameRange     '0.1.0',
+369 silly addNameRange     '0.1.1',
+369 silly addNameRange     '1.0.0',
+369 silly addNameRange     '1.0.1',
+369 silly addNameRange     '2.0.0',
+369 silly addNameRange     '2.1.0',
+369 silly addNameRange     '2.1.1',
+369 silly addNameRange     '2.2.0',
+369 silly addNameRange     '2.3.0',
+369 silly addNameRange     '2.3.1',
+369 silly addNameRange     '2.3.2',
+369 silly addNameRange     '2.4.0',
+369 silly addNameRange     '2.4.1',
+369 silly addNameRange     '2.4.2',
+369 silly addNameRange     '2.5.0',
+369 silly addNameRange     '2.5.1',
+369 silly addNameRange     '2.5.2',
+369 silly addNameRange     '2.5.3',
+369 silly addNameRange     '2.6.0',
+369 silly addNameRange     '2.6.1',
+369 silly addNameRange     '2.7.0',
+369 silly addNameRange     '2.7.1' ] ]
+370 verbose addNamed [ 'cors', '2.7.1' ]
+371 verbose addNamed [ '2.7.1', '2.7.1' ]
+372 silly lockFile 221e52c6-cors-2-7-1 cors@2.7.1
+373 verbose lock cors@2.7.1 /Users/hasudhakar/.npm/221e52c6-cors-2-7-1.lock
+374 silly lockFile 5c64bf45-http-0-0-0 http@0.0.0
+375 silly lockFile 5c64bf45-http-0-0-0 http@0.0.0
+376 silly lockFile 2d9f5298-http-0-0-x http@0.0.x
+377 silly lockFile 2d9f5298-http-0-0-x http@0.0.x
+378 silly lockFile 221e52c6-cors-2-7-1 cors@2.7.1
+379 silly lockFile 221e52c6-cors-2-7-1 cors@2.7.1
+380 silly lockFile f4328c08-cors-2-7-x cors@2.7.x
+381 silly lockFile f4328c08-cors-2-7-x cors@2.7.x
+382 http 200 https://registry.npmjs.org/twilio
+383 silly registry.get cb [ 200,
+383 silly registry.get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+383 silly registry.get     etag: '"3WC398E5BS2XBRZKBX6SRJARI"',
+383 silly registry.get     'content-type': 'application/json',
+383 silly registry.get     'cache-control': 'max-age=60',
+383 silly registry.get     'content-length': '42906',
+383 silly registry.get     'accept-ranges': 'bytes',
+383 silly registry.get     date: 'Sat, 15 Aug 2015 16:51:09 GMT',
+383 silly registry.get     via: '1.1 varnish',
+383 silly registry.get     age: '0',
+383 silly registry.get     connection: 'keep-alive',
+383 silly registry.get     'x-served-by': 'cache-lax1425-LAX',
+383 silly registry.get     'x-cache': 'HIT',
+383 silly registry.get     'x-cache-hits': '1',
+383 silly registry.get     'x-timer': 'S1439657469.755905,VS0,VE84',
+383 silly registry.get     vary: 'Accept' } ]
+384 http 200 https://registry.npmjs.org/twitter
+385 silly registry.get cb [ 200,
+385 silly registry.get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+385 silly registry.get     etag: '"6EG32MPRTY0SM9ZJ7JQV8TA6S"',
+385 silly registry.get     'content-type': 'application/json',
+385 silly registry.get     'cache-control': 'max-age=60',
+385 silly registry.get     'content-length': '44465',
+385 silly registry.get     'accept-ranges': 'bytes',
+385 silly registry.get     date: 'Sat, 15 Aug 2015 16:51:09 GMT',
+385 silly registry.get     via: '1.1 varnish',
+385 silly registry.get     age: '0',
+385 silly registry.get     connection: 'keep-alive',
+385 silly registry.get     'x-served-by': 'cache-lax1426-LAX',
+385 silly registry.get     'x-cache': 'MISS',
+385 silly registry.get     'x-cache-hits': '0',
+385 silly registry.get     'x-timer': 'S1439657469.536054,VS0,VE237',
+385 silly registry.get     vary: 'Accept' } ]
+386 silly lockFile 8e77f9dd-pmjs-org-twilio-twilio-2-2-1-tgz https://registry.npmjs.org/twilio/-/twilio-2.2.1.tgz
+387 verbose lock https://registry.npmjs.org/twilio/-/twilio-2.2.1.tgz /Users/hasudhakar/.npm/8e77f9dd-pmjs-org-twilio-twilio-2-2-1-tgz.lock
+388 verbose addRemoteTarball [ 'https://registry.npmjs.org/twilio/-/twilio-2.2.1.tgz',
+388 verbose addRemoteTarball   '28c0c34267b3d2f4b056b8133239e8f5fe68b246' ]
+389 silly addNameRange number 2 { name: 'twitter', range: '>=1.2.0-0 <1.3.0-0', hasData: true }
+390 silly addNameRange versions [ 'twitter',
+390 silly addNameRange   [ '0.1.11',
+390 silly addNameRange     '0.1.12',
+390 silly addNameRange     '0.1.13',
+390 silly addNameRange     '0.1.14',
+390 silly addNameRange     '0.1.15',
+390 silly addNameRange     '0.1.16',
+390 silly addNameRange     '0.1.17',
+390 silly addNameRange     '0.1.18',
+390 silly addNameRange     '0.2.0',
+390 silly addNameRange     '0.2.1',
+390 silly addNameRange     '0.2.2',
+390 silly addNameRange     '0.2.3',
+390 silly addNameRange     '0.2.4',
+390 silly addNameRange     '0.1.19',
+390 silly addNameRange     '0.2.5',
+390 silly addNameRange     '0.2.6',
+390 silly addNameRange     '0.2.7',
+390 silly addNameRange     '0.2.8',
+390 silly addNameRange     '0.2.9',
+390 silly addNameRange     '0.2.10',
+390 silly addNameRange     '0.2.11',
+390 silly addNameRange     '0.2.12',
+390 silly addNameRange     '0.2.13',
+390 silly addNameRange     '1.0.0',
+390 silly addNameRange     '1.0.1',
+390 silly addNameRange     '1.0.2',
+390 silly addNameRange     '1.0.3',
+390 silly addNameRange     '1.1.0',
+390 silly addNameRange     '1.2.0',
+390 silly addNameRange     '1.2.1',
+390 silly addNameRange     '1.2.2',
+390 silly addNameRange     '1.2.3',
+390 silly addNameRange     '1.2.4',
+390 silly addNameRange     '1.2.5' ] ]
+391 verbose addNamed [ 'twitter', '1.2.5' ]
+392 verbose addNamed [ '1.2.5', '1.2.5' ]
+393 silly lockFile 42ac7006-twitter-1-2-5 twitter@1.2.5
+394 verbose lock twitter@1.2.5 /Users/hasudhakar/.npm/42ac7006-twitter-1-2-5.lock
+395 info retry fetch attempt 1 at 11:51:18
+396 verbose fetch to= /var/folders/v9/04kxwyd91sbg0hhw24tsyj8r0000gq/T/npm-82834-qM7gnBoB/registry.npmjs.org/twilio/-/twilio-2.2.1.tgz
+397 http GET https://registry.npmjs.org/twilio/-/twilio-2.2.1.tgz
+398 silly lockFile 42ac7006-twitter-1-2-5 twitter@1.2.5
+399 silly lockFile 42ac7006-twitter-1-2-5 twitter@1.2.5
+400 silly lockFile 952c1b38-twitter-1-2-x twitter@1.2.x
+401 silly lockFile 952c1b38-twitter-1-2-x twitter@1.2.x
+402 http 200 https://registry.npmjs.org/watson-developer-cloud
+403 silly registry.get cb [ 200,
+403 silly registry.get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+403 silly registry.get     etag: '"371J3BWAWI03G0RP5R53ZCOUL"',
+403 silly registry.get     'content-type': 'application/json',
+403 silly registry.get     'cache-control': 'max-age=60',
+403 silly registry.get     'content-length': '80185',
+403 silly registry.get     'accept-ranges': 'bytes',
+403 silly registry.get     date: 'Sat, 15 Aug 2015 16:51:09 GMT',
+403 silly registry.get     via: '1.1 varnish',
+403 silly registry.get     age: '0',
+403 silly registry.get     connection: 'keep-alive',
+403 silly registry.get     'x-served-by': 'cache-lax1420-LAX',
+403 silly registry.get     'x-cache': 'MISS',
+403 silly registry.get     'x-cache-hits': '0',
+403 silly registry.get     'x-timer': 'S1439657469.535481,VS0,VE269',
+403 silly registry.get     vary: 'Accept' } ]
+404 http 200 https://registry.npmjs.org/twit
+405 silly registry.get cb [ 200,
+405 silly registry.get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+405 silly registry.get     etag: '"8Z49E5VGPUV5KCMI1VZUBXGNV"',
+405 silly registry.get     'content-type': 'application/json',
+405 silly registry.get     'cache-control': 'max-age=60',
+405 silly registry.get     'content-length': '55477',
+405 silly registry.get     'accept-ranges': 'bytes',
+405 silly registry.get     date: 'Sat, 15 Aug 2015 16:51:09 GMT',
+405 silly registry.get     via: '1.1 varnish',
+405 silly registry.get     age: '0',
+405 silly registry.get     connection: 'keep-alive',
+405 silly registry.get     'x-served-by': 'cache-lax1425-LAX',
+405 silly registry.get     'x-cache': 'HIT',
+405 silly registry.get     'x-cache-hits': '1',
+405 silly registry.get     'x-timer': 'S1439657469.867782,VS0,VE47',
+405 silly registry.get     vary: 'Accept' } ]
+406 silly addNameRange number 2 { name: 'watson-developer-cloud',
+406 silly addNameRange   range: '>=0.9.0-0 <0.10.0-0',
+406 silly addNameRange   hasData: true }
+407 silly addNameRange versions [ 'watson-developer-cloud',
+407 silly addNameRange   [ '1.0.0',
+407 silly addNameRange     '1.0.1',
+407 silly addNameRange     '1.0.2',
+407 silly addNameRange     '0.9.1',
+407 silly addNameRange     '0.9.2',
+407 silly addNameRange     '0.9.3',
+407 silly addNameRange     '0.9.4',
+407 silly addNameRange     '0.9.5',
+407 silly addNameRange     '0.9.6',
+407 silly addNameRange     '0.9.7',
+407 silly addNameRange     '0.9.8',
+407 silly addNameRange     '0.9.9',
+407 silly addNameRange     '0.9.11',
+407 silly addNameRange     '0.9.13',
+407 silly addNameRange     '0.9.14',
+407 silly addNameRange     '0.9.15',
+407 silly addNameRange     '0.9.16',
+407 silly addNameRange     '0.9.18',
+407 silly addNameRange     '0.9.19',
+407 silly addNameRange     '0.9.20',
+407 silly addNameRange     '0.9.21',
+407 silly addNameRange     '0.9.22',
+407 silly addNameRange     '0.9.23',
+407 silly addNameRange     '0.9.24',
+407 silly addNameRange     '0.9.25',
+407 silly addNameRange     '0.9.26',
+407 silly addNameRange     '0.9.27',
+407 silly addNameRange     '0.9.28' ] ]
+408 verbose addNamed [ 'watson-developer-cloud', '0.9.28' ]
+409 verbose addNamed [ '0.9.28', '0.9.28' ]
+410 silly lockFile fccfb2eb-watson-developer-cloud-0-9-28 watson-developer-cloud@0.9.28
+411 verbose lock watson-developer-cloud@0.9.28 /Users/hasudhakar/.npm/fccfb2eb-watson-developer-cloud-0-9-28.lock
+412 silly lockFile f9258aa3-atson-developer-cloud-0-9-28-tgz https://registry.npmjs.org/watson-developer-cloud/-/watson-developer-cloud-0.9.28.tgz
+413 verbose lock https://registry.npmjs.org/watson-developer-cloud/-/watson-developer-cloud-0.9.28.tgz /Users/hasudhakar/.npm/f9258aa3-atson-developer-cloud-0-9-28-tgz.lock
+414 silly addNameRange number 2 { name: 'twit', range: '>=2.0.0-0 <2.1.0-0', hasData: true }
+415 silly addNameRange versions [ 'twit',
+415 silly addNameRange   [ '0.1.0',
+415 silly addNameRange     '0.1.1',
+415 silly addNameRange     '0.1.2',
+415 silly addNameRange     '0.1.3',
+415 silly addNameRange     '0.1.5',
+415 silly addNameRange     '0.1.6',
+415 silly addNameRange     '0.1.7',
+415 silly addNameRange     '0.1.8',
+415 silly addNameRange     '0.2.0',
+415 silly addNameRange     '1.0.0',
+415 silly addNameRange     '1.0.1',
+415 silly addNameRange     '1.0.2',
+415 silly addNameRange     '1.0.3',
+415 silly addNameRange     '1.0.4',
+415 silly addNameRange     '1.0.5',
+415 silly addNameRange     '1.0.6',
+415 silly addNameRange     '1.0.7',
+415 silly addNameRange     '1.0.8',
+415 silly addNameRange     '1.0.9',
+415 silly addNameRange     '1.0.10',
+415 silly addNameRange     '1.0.11',
+415 silly addNameRange     '1.0.12',
+415 silly addNameRange     '1.1.0',
+415 silly addNameRange     '1.1.1',
+415 silly addNameRange     '1.1.2',
+415 silly addNameRange     '1.1.3',
+415 silly addNameRange     '1.1.4',
+415 silly addNameRange     '1.1.5',
+415 silly addNameRange     '1.1.6',
+415 silly addNameRange     '1.1.7',
+415 silly addNameRange     '1.1.8',
+415 silly addNameRange     '1.1.9',
+415 silly addNameRange     '1.1.10',
+415 silly addNameRange     '1.1.11',
+415 silly addNameRange     '1.1.12',
+415 silly addNameRange     '1.1.13',
+415 silly addNameRange     '1.1.14',
+415 silly addNameRange     '1.1.15',
+415 silly addNameRange     '1.1.16',
+415 silly addNameRange     '1.1.17',
+415 silly addNameRange     '1.1.18',
+415 silly addNameRange     '1.1.19',
+415 silly addNameRange     '1.1.20',
+415 silly addNameRange     '2.0.0',
+415 silly addNameRange     '2.0.1',
+415 silly addNameRange     '2.1.0' ] ]
+416 verbose addNamed [ 'twit', '2.0.1' ]
+417 verbose addNamed [ '2.0.1', '2.0.1' ]
+418 silly lockFile 77846314-twit-2-0-1 twit@2.0.1
+419 verbose lock twit@2.0.1 /Users/hasudhakar/.npm/77846314-twit-2-0-1.lock
+420 verbose addRemoteTarball [ 'https://registry.npmjs.org/watson-developer-cloud/-/watson-developer-cloud-0.9.28.tgz',
+420 verbose addRemoteTarball   'f504ad3b0bb4a81ad2900c57309d068fe6fc27ee' ]
+421 info retry fetch attempt 1 at 11:51:18
+422 verbose fetch to= /var/folders/v9/04kxwyd91sbg0hhw24tsyj8r0000gq/T/npm-82834-qM7gnBoB/registry.npmjs.org/watson-developer-cloud/-/watson-developer-cloud-0.9.28.tgz
+423 http GET https://registry.npmjs.org/watson-developer-cloud/-/watson-developer-cloud-0.9.28.tgz
+424 silly lockFile 77846314-twit-2-0-1 twit@2.0.1
+425 silly lockFile 77846314-twit-2-0-1 twit@2.0.1
+426 silly lockFile 293ebf55-twit-2-0-x twit@2.0.x
+427 silly lockFile 293ebf55-twit-2-0-x twit@2.0.x
+428 http 200 https://registry.npmjs.org/oauth
+429 silly registry.get cb [ 200,
+429 silly registry.get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+429 silly registry.get     etag: '"6C1SBQ6U9QG5MYQVV3URFC139"',
+429 silly registry.get     'content-type': 'application/json',
+429 silly registry.get     'cache-control': 'max-age=60',
+429 silly registry.get     'content-length': '28194',
+429 silly registry.get     'accept-ranges': 'bytes',
+429 silly registry.get     date: 'Sat, 15 Aug 2015 16:51:09 GMT',
+429 silly registry.get     via: '1.1 varnish',
+429 silly registry.get     age: '0',
+429 silly registry.get     connection: 'keep-alive',
+429 silly registry.get     'x-served-by': 'cache-lax1426-LAX',
+429 silly registry.get     'x-cache': 'MISS',
+429 silly registry.get     'x-cache-hits': '0',
+429 silly registry.get     'x-timer': 'S1439657469.868136,VS0,VE92',
+429 silly registry.get     vary: 'Accept' } ]
+430 silly addNameRange number 2 { name: 'oauth', range: '>=0.9.0-0 <0.10.0-0', hasData: true }
+431 silly addNameRange versions [ 'oauth',
+431 silly addNameRange   [ '0.7.4',
+431 silly addNameRange     '0.7.5',
+431 silly addNameRange     '0.7.6',
+431 silly addNameRange     '0.7.7',
+431 silly addNameRange     '0.8.0',
+431 silly addNameRange     '0.8.1',
+431 silly addNameRange     '0.8.2',
+431 silly addNameRange     '0.8.3',
+431 silly addNameRange     '0.8.4',
+431 silly addNameRange     '0.9.0',
+431 silly addNameRange     '0.9.1',
+431 silly addNameRange     '0.9.2',
+431 silly addNameRange     '0.9.3',
+431 silly addNameRange     '0.9.4',
+431 silly addNameRange     '0.9.5',
+431 silly addNameRange     '0.9.6',
+431 silly addNameRange     '0.9.7',
+431 silly addNameRange     '0.9.8',
+431 silly addNameRange     '0.9.9',
+431 silly addNameRange     '0.9.10',
+431 silly addNameRange     '0.9.11',
+431 silly addNameRange     '0.9.12',
+431 silly addNameRange     '0.9.13' ] ]
+432 verbose addNamed [ 'oauth', '0.9.13' ]
+433 verbose addNamed [ '0.9.13', '0.9.13' ]
+434 silly lockFile 5d17abc8-oauth-0-9-13 oauth@0.9.13
+435 verbose lock oauth@0.9.13 /Users/hasudhakar/.npm/5d17abc8-oauth-0-9-13.lock
+436 silly lockFile 5d17abc8-oauth-0-9-13 oauth@0.9.13
+437 silly lockFile 5d17abc8-oauth-0-9-13 oauth@0.9.13
+438 silly lockFile 657e5595-oauth-0-9-x oauth@0.9.x
+439 silly lockFile 657e5595-oauth-0-9-x oauth@0.9.x
+440 http 304 https://registry.npmjs.org/alchemy-api
+441 silly registry.get cb [ 304,
+441 silly registry.get   { date: 'Sat, 15 Aug 2015 16:51:09 GMT',
+441 silly registry.get     via: '1.1 varnish',
+441 silly registry.get     'cache-control': 'max-age=60',
+441 silly registry.get     etag: '"1QHHH2RI4A6B2OI00W4GJGQUR"',
+441 silly registry.get     age: '0',
+441 silly registry.get     connection: 'keep-alive',
+441 silly registry.get     'x-served-by': 'cache-lax1431-LAX',
+441 silly registry.get     'x-cache': 'MISS',
+441 silly registry.get     'x-cache-hits': '0',
+441 silly registry.get     'x-timer': 'S1439657469.622051,VS0,VE414',
+441 silly registry.get     vary: 'Accept' } ]
+442 verbose etag https://registry.npmjs.org/alchemy-api from cache
+443 http 200 https://registry.npmjs.org/sendgrid
+444 silly registry.get cb [ 200,
+444 silly registry.get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+444 silly registry.get     etag: '"5RRYP70H0UT5RI8WT657G2TP3"',
+444 silly registry.get     'content-type': 'application/json',
+444 silly registry.get     'cache-control': 'max-age=60',
+444 silly registry.get     'content-length': '108311',
+444 silly registry.get     'accept-ranges': 'bytes',
+444 silly registry.get     date: 'Sat, 15 Aug 2015 16:51:09 GMT',
+444 silly registry.get     via: '1.1 varnish',
+444 silly registry.get     age: '0',
+444 silly registry.get     connection: 'keep-alive',
+444 silly registry.get     'x-served-by': 'cache-lax1430-LAX',
+444 silly registry.get     'x-cache': 'MISS',
+444 silly registry.get     'x-cache-hits': '0',
+444 silly registry.get     'x-timer': 'S1439657469.754155,VS0,VE175',
+444 silly registry.get     vary: 'Accept' } ]
+445 silly addNameRange number 2 { name: 'alchemy-api',
+445 silly addNameRange   range: '>=1.2.0-0 <1.3.0-0',
+445 silly addNameRange   hasData: true }
+446 silly addNameRange versions [ 'alchemy-api',
+446 silly addNameRange   [ '0.5.0',
+446 silly addNameRange     '0.6.0',
+446 silly addNameRange     '0.7.0',
+446 silly addNameRange     '0.8.0',
+446 silly addNameRange     '0.8.5',
+446 silly addNameRange     '0.8.6',
+446 silly addNameRange     '0.8.7',
+446 silly addNameRange     '0.8.8',
+446 silly addNameRange     '0.8.9',
+446 silly addNameRange     '0.9.0',
+446 silly addNameRange     '1.0.0',
+446 silly addNameRange     '1.0.1',
+446 silly addNameRange     '1.0.2',
+446 silly addNameRange     '1.1.0',
+446 silly addNameRange     '1.1.1',
+446 silly addNameRange     '1.1.2',
+446 silly addNameRange     '1.2.0',
+446 silly addNameRange     '1.3.0' ] ]
+447 verbose addNamed [ 'alchemy-api', '1.2.0' ]
+448 verbose addNamed [ '1.2.0', '1.2.0' ]
+449 silly lockFile 4a8ab973-alchemy-api-1-2-0 alchemy-api@1.2.0
+450 verbose lock alchemy-api@1.2.0 /Users/hasudhakar/.npm/4a8ab973-alchemy-api-1-2-0.lock
+451 silly lockFile 49e0364d--org-sendgrid-sendgrid-1-8-0-tgz https://registry.npmjs.org/sendgrid/-/sendgrid-1.8.0.tgz
+452 verbose lock https://registry.npmjs.org/sendgrid/-/sendgrid-1.8.0.tgz /Users/hasudhakar/.npm/49e0364d--org-sendgrid-sendgrid-1-8-0-tgz.lock
+453 verbose addRemoteTarball [ 'https://registry.npmjs.org/sendgrid/-/sendgrid-1.8.0.tgz',
+453 verbose addRemoteTarball   '927835e16a7c7a23b09025a5628097670999f93a' ]
+454 info retry fetch attempt 1 at 11:51:18
+455 verbose fetch to= /var/folders/v9/04kxwyd91sbg0hhw24tsyj8r0000gq/T/npm-82834-qM7gnBoB/registry.npmjs.org/sendgrid/-/sendgrid-1.8.0.tgz
+456 silly lockFile 4a8ab973-alchemy-api-1-2-0 alchemy-api@1.2.0
+457 silly lockFile 4a8ab973-alchemy-api-1-2-0 alchemy-api@1.2.0
+458 http GET https://registry.npmjs.org/sendgrid/-/sendgrid-1.8.0.tgz
+459 silly lockFile 17c244b3-alchemy-api-1-2-x alchemy-api@1.2.x
+460 silly lockFile 17c244b3-alchemy-api-1-2-x alchemy-api@1.2.x
+461 http 200 https://registry.npmjs.org/longjohn
+462 silly registry.get cb [ 200,
+462 silly registry.get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+462 silly registry.get     etag: '"66YQOR9QF67Y2EBW57LWKCCPQ"',
+462 silly registry.get     'content-type': 'application/json',
+462 silly registry.get     'cache-control': 'max-age=60',
+462 silly registry.get     'content-length': '17836',
+462 silly registry.get     'accept-ranges': 'bytes',
+462 silly registry.get     date: 'Sat, 15 Aug 2015 16:51:10 GMT',
+462 silly registry.get     via: '1.1 varnish',
+462 silly registry.get     age: '0',
+462 silly registry.get     connection: 'keep-alive',
+462 silly registry.get     'x-served-by': 'cache-lax1426-LAX',
+462 silly registry.get     'x-cache': 'MISS',
+462 silly registry.get     'x-cache-hits': '0',
+462 silly registry.get     'x-timer': 'S1439657470.012538,VS0,VE42',
+462 silly registry.get     vary: 'Accept' } ]
+463 silly addNameRange number 2 { name: 'longjohn', range: '>=0.2.0-0 <0.3.0-0', hasData: true }
+464 silly addNameRange versions [ 'longjohn',
+464 silly addNameRange   [ '0.0.1',
+464 silly addNameRange     '0.0.2',
+464 silly addNameRange     '0.0.3',
+464 silly addNameRange     '0.0.4',
+464 silly addNameRange     '0.0.5',
+464 silly addNameRange     '0.2.0',
+464 silly addNameRange     '0.2.1',
+464 silly addNameRange     '0.2.2',
+464 silly addNameRange     '0.2.3',
+464 silly addNameRange     '0.2.4',
+464 silly addNameRange     '0.2.5',
+464 silly addNameRange     '0.2.6',
+464 silly addNameRange     '0.2.7',
+464 silly addNameRange     '0.2.8' ] ]
+465 verbose addNamed [ 'longjohn', '0.2.8' ]
+466 verbose addNamed [ '0.2.8', '0.2.8' ]
+467 silly lockFile 4e92e32f-longjohn-0-2-8 longjohn@0.2.8
+468 verbose lock longjohn@0.2.8 /Users/hasudhakar/.npm/4e92e32f-longjohn-0-2-8.lock
+469 silly lockFile 902dc947--org-longjohn-longjohn-0-2-8-tgz https://registry.npmjs.org/longjohn/-/longjohn-0.2.8.tgz
+470 verbose lock https://registry.npmjs.org/longjohn/-/longjohn-0.2.8.tgz /Users/hasudhakar/.npm/902dc947--org-longjohn-longjohn-0-2-8-tgz.lock
+471 verbose addRemoteTarball [ 'https://registry.npmjs.org/longjohn/-/longjohn-0.2.8.tgz',
+471 verbose addRemoteTarball   'da6f0303031c1c37e9a5b52cbbf6fef90f18eaad' ]
+472 info retry fetch attempt 1 at 11:51:18
+473 verbose fetch to= /var/folders/v9/04kxwyd91sbg0hhw24tsyj8r0000gq/T/npm-82834-qM7gnBoB/registry.npmjs.org/longjohn/-/longjohn-0.2.8.tgz
+474 http GET https://registry.npmjs.org/longjohn/-/longjohn-0.2.8.tgz
+475 http 304 https://registry.npmjs.org/node-tweet-stream
+476 silly registry.get cb [ 304,
+476 silly registry.get   { date: 'Sat, 15 Aug 2015 16:51:09 GMT',
+476 silly registry.get     via: '1.1 varnish',
+476 silly registry.get     'cache-control': 'max-age=60',
+476 silly registry.get     etag: '"BT0ZORH2WI6RF5SPV5VA1TTUJ"',
+476 silly registry.get     age: '0',
+476 silly registry.get     connection: 'keep-alive',
+476 silly registry.get     'x-served-by': 'cache-lax1425-LAX',
+476 silly registry.get     'x-cache': 'MISS',
+476 silly registry.get     'x-cache-hits': '0',
+476 silly registry.get     'x-timer': 'S1439657469.948839,VS0,VE147',
+476 silly registry.get     vary: 'Accept' } ]
+477 verbose etag https://registry.npmjs.org/node-tweet-stream from cache
+478 silly addNameRange number 2 { name: 'node-tweet-stream',
+478 silly addNameRange   range: '>=1.8.0-0 <1.9.0-0',
+478 silly addNameRange   hasData: true }
+479 silly addNameRange versions [ 'node-tweet-stream',
+479 silly addNameRange   [ '1.0.0',
+479 silly addNameRange     '1.0.1',
+479 silly addNameRange     '1.1.0',
+479 silly addNameRange     '1.2.0',
+479 silly addNameRange     '1.2.1',
+479 silly addNameRange     '1.2.2',
+479 silly addNameRange     '1.3.0',
+479 silly addNameRange     '1.3.1',
+479 silly addNameRange     '1.3.2',
+479 silly addNameRange     '1.4.0',
+479 silly addNameRange     '1.4.2',
+479 silly addNameRange     '1.5.0',
+479 silly addNameRange     '1.5.1',
+479 silly addNameRange     '1.6.0',
+479 silly addNameRange     '1.7.0',
+479 silly addNameRange     '1.8.0',
+479 silly addNameRange     '1.8.1',
+479 silly addNameRange     '1.8.2' ] ]
+480 verbose addNamed [ 'node-tweet-stream', '1.8.2' ]
+481 verbose addNamed [ '1.8.2', '1.8.2' ]
+482 silly lockFile 5970ee75-node-tweet-stream-1-8-2 node-tweet-stream@1.8.2
+483 verbose lock node-tweet-stream@1.8.2 /Users/hasudhakar/.npm/5970ee75-node-tweet-stream-1-8-2.lock
+484 silly lockFile 5970ee75-node-tweet-stream-1-8-2 node-tweet-stream@1.8.2
+485 silly lockFile 5970ee75-node-tweet-stream-1-8-2 node-tweet-stream@1.8.2
+486 silly lockFile ed046224-node-tweet-stream-1-8-x node-tweet-stream@1.8.x
+487 silly lockFile ed046224-node-tweet-stream-1-8-x node-tweet-stream@1.8.x
+488 http 304 https://registry.npmjs.org/node-bing-api
+489 silly registry.get cb [ 304,
+489 silly registry.get   { date: 'Sat, 15 Aug 2015 16:51:09 GMT',
+489 silly registry.get     via: '1.1 varnish',
+489 silly registry.get     'cache-control': 'max-age=60',
+489 silly registry.get     etag: '"DAOP4C9VRRRHO6VY4TMH1BYDH"',
+489 silly registry.get     age: '0',
+489 silly registry.get     connection: 'keep-alive',
+489 silly registry.get     'x-served-by': 'cache-lax1420-LAX',
+489 silly registry.get     'x-cache': 'MISS',
+489 silly registry.get     'x-cache-hits': '0',
+489 silly registry.get     'x-timer': 'S1439657469.943313,VS0,VE216',
+489 silly registry.get     vary: 'Accept' } ]
+490 verbose etag https://registry.npmjs.org/node-bing-api from cache
+491 silly addNameRange number 2 { name: 'node-bing-api',
+491 silly addNameRange   range: '>=2.0.0-0 <2.1.0-0',
+491 silly addNameRange   hasData: true }
+492 silly addNameRange versions [ 'node-bing-api',
+492 silly addNameRange   [ '0.0.1',
+492 silly addNameRange     '0.1.1',
+492 silly addNameRange     '0.1.2',
+492 silly addNameRange     '0.1.3',
+492 silly addNameRange     '0.1.4',
+492 silly addNameRange     '0.1.5',
+492 silly addNameRange     '0.1.6',
+492 silly addNameRange     '0.1.7',
+492 silly addNameRange     '1.0.0',
+492 silly addNameRange     '1.1.0',
+492 silly addNameRange     '1.2.0',
+492 silly addNameRange     '1.3.0',
+492 silly addNameRange     '2.0.0' ] ]
+493 verbose addNamed [ 'node-bing-api', '2.0.0' ]
+494 verbose addNamed [ '2.0.0', '2.0.0' ]
+495 silly lockFile 782fb1cb-node-bing-api-2-0-0 node-bing-api@2.0.0
+496 verbose lock node-bing-api@2.0.0 /Users/hasudhakar/.npm/782fb1cb-node-bing-api-2-0-0.lock
+497 silly lockFile 782fb1cb-node-bing-api-2-0-0 node-bing-api@2.0.0
+498 silly lockFile 782fb1cb-node-bing-api-2-0-0 node-bing-api@2.0.0
+499 silly lockFile 624499fd-node-bing-api-2-0-x node-bing-api@2.0.x
+500 silly lockFile 624499fd-node-bing-api-2-0-x node-bing-api@2.0.x
+501 http 200 https://registry.npmjs.org/longjohn/-/longjohn-0.2.8.tgz
+502 silly lockFile 902dc947--org-longjohn-longjohn-0-2-8-tgz https://registry.npmjs.org/longjohn/-/longjohn-0.2.8.tgz
+503 silly lockFile 902dc947--org-longjohn-longjohn-0-2-8-tgz https://registry.npmjs.org/longjohn/-/longjohn-0.2.8.tgz
+504 silly lockFile 4e92e32f-longjohn-0-2-8 longjohn@0.2.8
+505 silly lockFile 4e92e32f-longjohn-0-2-8 longjohn@0.2.8
+506 silly lockFile 7b647822-longjohn-0-2-x longjohn@0.2.x
+507 silly lockFile 7b647822-longjohn-0-2-x longjohn@0.2.x
+508 http 304 https://registry.npmjs.org/cfenv
+509 silly registry.get cb [ 304,
+509 silly registry.get   { date: 'Sat, 15 Aug 2015 16:51:10 GMT',
+509 silly registry.get     via: '1.1 varnish',
+509 silly registry.get     'cache-control': 'max-age=60',
+509 silly registry.get     etag: '"43RNPTXGIGBT26JTXIABXYWJ2"',
+509 silly registry.get     age: '0',
+509 silly registry.get     connection: 'keep-alive',
+509 silly registry.get     'x-served-by': 'cache-lax1430-LAX',
+509 silly registry.get     'x-cache': 'MISS',
+509 silly registry.get     'x-cache-hits': '0',
+509 silly registry.get     'x-timer': 'S1439657470.068791,VS0,VE143',
+509 silly registry.get     vary: 'Accept' } ]
+510 verbose etag https://registry.npmjs.org/cfenv from cache
+511 silly addNameRange number 2 { name: 'cfenv', range: '>=1.0.0-0 <1.1.0-0', hasData: true }
+512 silly addNameRange versions [ 'cfenv', [ '0.2.0', '1.0.0' ] ]
+513 verbose addNamed [ 'cfenv', '1.0.0' ]
+514 verbose addNamed [ '1.0.0', '1.0.0' ]
+515 silly lockFile 556bea56-cfenv-1-0-0 cfenv@1.0.0
+516 verbose lock cfenv@1.0.0 /Users/hasudhakar/.npm/556bea56-cfenv-1-0-0.lock
+517 silly lockFile 556bea56-cfenv-1-0-0 cfenv@1.0.0
+518 silly lockFile 556bea56-cfenv-1-0-0 cfenv@1.0.0
+519 silly lockFile 0a17ca23-cfenv-1-0-x cfenv@1.0.x
+520 silly lockFile 0a17ca23-cfenv-1-0-x cfenv@1.0.x
+521 http 200 https://registry.npmjs.org/twilio/-/twilio-2.2.1.tgz
+522 silly lockFile 8e77f9dd-pmjs-org-twilio-twilio-2-2-1-tgz https://registry.npmjs.org/twilio/-/twilio-2.2.1.tgz
+523 silly lockFile 8e77f9dd-pmjs-org-twilio-twilio-2-2-1-tgz https://registry.npmjs.org/twilio/-/twilio-2.2.1.tgz
+524 silly lockFile c22e80a6-twilio-2-2-1 twilio@2.2.1
+525 silly lockFile c22e80a6-twilio-2-2-1 twilio@2.2.1
+526 http 200 https://registry.npmjs.org/watson-developer-cloud/-/watson-developer-cloud-0.9.28.tgz
+527 http 200 https://registry.npmjs.org/socket.io
+528 silly registry.get cb [ 200,
+528 silly registry.get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+528 silly registry.get     etag: '"CY3SCB4LHZMLX5PHFVM8IU9EK"',
+528 silly registry.get     'content-type': 'application/json',
+528 silly registry.get     'cache-control': 'max-age=60',
+528 silly registry.get     'content-length': '113452',
+528 silly registry.get     'accept-ranges': 'bytes',
+528 silly registry.get     date: 'Sat, 15 Aug 2015 16:51:10 GMT',
+528 silly registry.get     via: '1.1 varnish',
+528 silly registry.get     age: '0',
+528 silly registry.get     connection: 'keep-alive',
+528 silly registry.get     'x-served-by': 'cache-lax1431-LAX',
+528 silly registry.get     'x-cache': 'HIT',
+528 silly registry.get     'x-cache-hits': '1',
+528 silly registry.get     'x-timer': 'S1439657470.069292,VS0,VE174',
+528 silly registry.get     vary: 'Accept' } ]
+529 silly addNameRange number 2 { name: 'socket.io', range: '>=1.3.0-0 <1.4.0-0', hasData: true }
+530 silly addNameRange versions [ 'socket.io',
+530 silly addNameRange   [ '0.3.8',
+530 silly addNameRange     '0.4.0',
+530 silly addNameRange     '0.4.1',
+530 silly addNameRange     '0.5.1',
+530 silly addNameRange     '0.5.3',
+530 silly addNameRange     '0.6.0',
+530 silly addNameRange     '0.6.1',
+530 silly addNameRange     '0.6.3',
+530 silly addNameRange     '0.6.4',
+530 silly addNameRange     '0.6.5',
+530 silly addNameRange     '0.6.6',
+530 silly addNameRange     '0.6.7',
+530 silly addNameRange     '0.6.8',
+530 silly addNameRange     '0.6.9',
+530 silly addNameRange     '0.6.10',
+530 silly addNameRange     '0.6.11',
+530 silly addNameRange     '0.6.12',
+530 silly addNameRange     '0.6.14',
+530 silly addNameRange     '0.6.15',
+530 silly addNameRange     '0.6.16',
+530 silly addNameRange     '0.6.17',
+530 silly addNameRange     '0.6.18',
+530 silly addNameRange     '0.7.0',
+530 silly addNameRange     '0.7.1',
+530 silly addNameRange     '0.7.2',
+530 silly addNameRange     '0.7.3',
+530 silly addNameRange     '0.7.4',
+530 silly addNameRange     '0.7.5',
+530 silly addNameRange     '0.7.6',
+530 silly addNameRange     '0.7.7',
+530 silly addNameRange     '0.7.8',
+530 silly addNameRange     '0.7.9',
+530 silly addNameRange     '0.7.10',
+530 silly addNameRange     '0.7.11',
+530 silly addNameRange     '0.8.0',
+530 silly addNameRange     '0.8.1',
+530 silly addNameRange     '0.8.2',
+530 silly addNameRange     '0.8.3',
+530 silly addNameRange     '0.8.4',
+530 silly addNameRange     '0.8.5',
+530 silly addNameRange     '0.8.6',
+530 silly addNameRange     '0.8.7',
+530 silly addNameRange     '0.9.0',
+530 silly addNameRange     '0.9.1',
+530 silly addNameRange     '0.9.1-1',
+530 silly addNameRange     '0.9.2',
+530 silly addNameRange     '0.9.3',
+530 silly addNameRange     '0.9.4',
+530 silly addNameRange     '0.9.5',
+530 silly addNameRange     '0.9.6',
+530 silly addNameRange     '0.9.7',
+530 silly addNameRange     '0.9.8',
+530 silly addNameRange     '0.9.9',
+530 silly addNameRange     '0.9.10',
+530 silly addNameRange     '0.9.11',
+530 silly addNameRange     '0.9.12',
+530 silly addNameRange     '0.9.13',
+530 silly addNameRange     '0.9.14',
+530 silly addNameRange     '0.9.15',
+530 silly addNameRange     '0.9.16',
+530 silly addNameRange     '1.0.0-pre',
+530 silly addNameRange     '1.0.0-pre2',
+530 silly addNameRange     '1.0.0-pre3',
+530 silly addNameRange     '1.0.0-pre4',
+530 silly addNameRange     '1.0.0-pre5',
+530 silly addNameRange     '0.9.17',
+530 silly addNameRange     '1.0.0',
+530 silly addNameRange     '1.0.1',
+530 silly addNameRange     '1.0.2',
+530 silly addNameRange     '1.0.3',
+530 silly addNameRange     '1.0.4',
+530 silly addNameRange     '1.0.5',
+530 silly addNameRange     '1.0.6',
+530 silly addNameRange     '1.1.0',
+530 silly addNameRange     '1.2.0',
+530 silly addNameRange     '1.2.1',
+530 silly addNameRange     '1.3.0',
+530 silly addNameRange     '1.3.1',
+530 silly addNameRange     '1.3.2',
+530 silly addNameRange     '1.3.3',
+530 silly addNameRange     '1.3.4',
+530 silly addNameRange     '1.3.5',
+530 silly addNameRange     '1.3.6' ] ]
+531 verbose addNamed [ 'socket.io', '1.3.6' ]
+532 verbose addNamed [ '1.3.6', '1.3.6' ]
+533 silly lockFile 79923448-socket-io-1-3-6 socket.io@1.3.6
+534 verbose lock socket.io@1.3.6 /Users/hasudhakar/.npm/79923448-socket-io-1-3-6.lock
+535 silly lockFile 79923448-socket-io-1-3-6 socket.io@1.3.6
+536 silly lockFile 79923448-socket-io-1-3-6 socket.io@1.3.6
+537 silly lockFile 4cbe36ca-socket-io-1-3-x socket.io@1.3.x
+538 silly lockFile 4cbe36ca-socket-io-1-3-x socket.io@1.3.x
+539 silly lockFile f9258aa3-atson-developer-cloud-0-9-28-tgz https://registry.npmjs.org/watson-developer-cloud/-/watson-developer-cloud-0.9.28.tgz
+540 silly lockFile f9258aa3-atson-developer-cloud-0-9-28-tgz https://registry.npmjs.org/watson-developer-cloud/-/watson-developer-cloud-0.9.28.tgz
+541 silly lockFile fccfb2eb-watson-developer-cloud-0-9-28 watson-developer-cloud@0.9.28
+542 silly lockFile fccfb2eb-watson-developer-cloud-0-9-28 watson-developer-cloud@0.9.28
+543 silly lockFile 6e82d655-watson-developer-cloud-0-9-x watson-developer-cloud@0.9.x
+544 silly lockFile 6e82d655-watson-developer-cloud-0-9-x watson-developer-cloud@0.9.x
+545 http 200 https://registry.npmjs.org/express
+546 silly registry.get cb [ 200,
+546 silly registry.get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+546 silly registry.get     etag: '"5RPOEZW5CKB62KZJFFNEMIOGU"',
+546 silly registry.get     'content-type': 'application/json',
+546 silly registry.get     'cache-control': 'max-age=60',
+546 silly registry.get     'content-length': '525930',
+546 silly registry.get     'accept-ranges': 'bytes',
+546 silly registry.get     date: 'Sat, 15 Aug 2015 16:51:10 GMT',
+546 silly registry.get     via: '1.1 varnish',
+546 silly registry.get     age: '27',
+546 silly registry.get     connection: 'keep-alive',
+546 silly registry.get     'x-served-by': 'cache-lax1426-LAX',
+546 silly registry.get     'x-cache': 'HIT',
+546 silly registry.get     'x-cache-hits': '1',
+546 silly registry.get     'x-timer': 'S1439657470.094946,VS0,VE3',
+546 silly registry.get     vary: 'Accept' } ]
+547 silly addNameRange number 2 { name: 'express', range: '>=4.12.0-0 <4.13.0-0', hasData: true }
+548 silly addNameRange versions [ 'express',
+548 silly addNameRange   [ '0.14.0',
+548 silly addNameRange     '0.14.1',
+548 silly addNameRange     '1.0.0',
+548 silly addNameRange     '1.0.1',
+548 silly addNameRange     '1.0.2',
+548 silly addNameRange     '1.0.3',
+548 silly addNameRange     '1.0.4',
+548 silly addNameRange     '1.0.5',
+548 silly addNameRange     '1.0.6',
+548 silly addNameRange     '1.0.7',
+548 silly addNameRange     '1.0.8',
+548 silly addNameRange     '2.0.0',
+548 silly addNameRange     '2.1.0',
+548 silly addNameRange     '2.1.1',
+548 silly addNameRange     '2.2.0',
+548 silly addNameRange     '2.2.1',
+548 silly addNameRange     '2.2.2',
+548 silly addNameRange     '2.3.0',
+548 silly addNameRange     '2.3.1',
+548 silly addNameRange     '2.3.2',
+548 silly addNameRange     '2.3.3',
+548 silly addNameRange     '2.3.4',
+548 silly addNameRange     '2.3.5',
+548 silly addNameRange     '2.3.6',
+548 silly addNameRange     '2.3.7',
+548 silly addNameRange     '2.3.8',
+548 silly addNameRange     '2.3.9',
+548 silly addNameRange     '2.3.10',
+548 silly addNameRange     '2.3.11',
+548 silly addNameRange     '2.3.12',
+548 silly addNameRange     '2.4.0',
+548 silly addNameRange     '2.4.1',
+548 silly addNameRange     '2.4.2',
+548 silly addNameRange     '2.4.3',
+548 silly addNameRange     '2.4.4',
+548 silly addNameRange     '2.4.5',
+548 silly addNameRange     '2.4.6',
+548 silly addNameRange     '2.4.7',
+548 silly addNameRange     '2.5.0',
+548 silly addNameRange     '2.5.1',
+548 silly addNameRange     '2.5.2',
+548 silly addNameRange     '2.5.3',
+548 silly addNameRange     '2.5.4',
+548 silly addNameRange     '2.5.5',
+548 silly addNameRange     '2.5.6',
+548 silly addNameRange     '2.5.7',
+548 silly addNameRange     '2.5.8',
+548 silly addNameRange     '2.5.9',
+548 silly addNameRange     '2.5.10',
+548 silly addNameRange     '2.5.11',
+548 silly addNameRange     '3.0.0',
+548 silly addNameRange     '3.0.1',
+548 silly addNameRange     '3.0.2',
+548 silly addNameRange     '3.0.3',
+548 silly addNameRange     '3.0.4',
+548 silly addNameRange     '3.0.5',
+548 silly addNameRange     '3.0.6',
+548 silly addNameRange     '3.1.0',
+548 silly addNameRange     '3.1.1',
+548 silly addNameRange     '3.1.2',
+548 silly addNameRange     '3.2.0',
+548 silly addNameRange     '3.2.1',
+548 silly addNameRange     '3.2.2',
+548 silly addNameRange     '3.2.3',
+548 silly addNameRange     '3.2.4',
+548 silly addNameRange     '3.2.5',
+548 silly addNameRange     '3.2.6',
+548 silly addNameRange     '3.3.0',
+548 silly addNameRange     '3.3.1',
+548 silly addNameRange     '3.3.2',
+548 silly addNameRange     '3.3.3',
+548 silly addNameRange     '3.3.4',
+548 silly addNameRange     '3.3.5',
+548 silly addNameRange     '3.3.6',
+548 silly addNameRange     '1.0.0-beta',
+548 silly addNameRange     '1.0.0-beta2',
+548 silly addNameRange     '1.0.0-rc',
+548 silly addNameRange     '1.0.0-rc2',
+548 silly addNameRange     '1.0.0-rc3',
+548 silly addNameRange     '1.0.0-rc4',
+548 silly addNameRange     '2.0.0-beta',
+548 silly addNameRange     '2.0.0-beta2',
+548 silly addNameRange     '2.0.0-beta3',
+548 silly addNameRange     '2.0.0-rc',
+548 silly addNameRange     '2.0.0-rc2',
+548 silly addNameRange     '2.0.0-rc3',
+548 silly addNameRange     '3.0.0-alpha1',
+548 silly addNameRange     '3.0.0-alpha2',
+548 silly addNameRange     '3.0.0-alpha3',
+548 silly addNameRange     '3.0.0-alpha4',
+548 silly addNameRange     '3.0.0-alpha5',
+548 silly addNameRange     '3.0.0-beta1',
+548 silly addNameRange     '3.0.0-beta2',
+548 silly addNameRange     '3.0.0-beta3',
+548 silly addNameRange     '3.0.0-beta4',
+548 silly addNameRange     '3.0.0-beta6',
+548 silly addNameRange     '3.0.0-beta7',
+548 silly addNameRange     '3.0.0-rc1',
+548 silly addNameRange     '3.0.0-rc2',
+548 silly addNameRange     '3.0.0-rc3',
+548 silly addNameRange     '3.0.0-rc4',
+548 silly addNameRange     '3.0.0-rc5',
+548 silly addNameRange     '3.3.7',
+548 silly addNameRange     '3.3.8',
+548 silly addNameRange     '3.4.0',
+548 silly addNameRange     '3.4.1',
+548 silly addNameRange     '3.4.2',
+548 silly addNameRange     '3.4.3',
+548 silly addNameRange     '3.4.4',
+548 silly addNameRange     '3.4.5',
+548 silly addNameRange     '3.4.6',
+548 silly addNameRange     '3.4.7',
+548 silly addNameRange     '3.4.8',
+548 silly addNameRange     '4.0.0-rc1',
+548 silly addNameRange     '4.0.0-rc2',
+548 silly addNameRange     '3.5.0',
+548 silly addNameRange     '4.0.0-rc3',
+548 silly addNameRange     '4.0.0-rc4',
+548 silly addNameRange     '3.5.1',
+548 silly addNameRange     '4.0.0',
+548 silly addNameRange     '3.5.2',
+548 silly addNameRange     '4.1.0',
+548 silly addNameRange     '4.1.1',
+548 silly addNameRange     '3.5.3',
+548 silly addNameRange     '4.1.2',
+548 silly addNameRange     '3.6.0',
+548 silly addNameRange     '4.2.0',
+548 silly addNameRange     '3.7.0',
+548 silly addNameRange     '3.8.0',
+548 silly addNameRange     '4.3.0',
+548 silly addNameRange     '4.3.1',
+548 silly addNameRange     '3.8.1',
+548 silly addNameRange     '4.3.2',
+548 silly addNameRange     '3.9.0',
+548 silly addNameRange     '4.4.0',
+548 silly addNameRange     '4.4.1',
+548 silly addNameRange     '3.10.0',
+548 silly addNameRange     '3.10.1',
+548 silly addNameRange     '3.10.2',
+548 silly addNameRange     '3.10.3',
+548 silly addNameRange     '3.10.4',
+548 silly addNameRange     '4.4.2',
+548 silly addNameRange     '3.10.5',
+548 silly addNameRange     '4.4.3',
+548 silly addNameRange     '3.11.0',
+548 silly addNameRange     '4.4.4',
+548 silly addNameRange     '3.12.0',
+548 silly addNameRange     '3.12.1',
+548 silly addNameRange     '4.4.5',
+548 silly addNameRange     '3.13.0',
+548 silly addNameRange     '4.5.0',
+548 silly addNameRange     '4.5.1',
+548 silly addNameRange     '3.14.0',
+548 silly addNameRange     '4.6.0',
+548 silly addNameRange     '4.6.1',
+548 silly addNameRange     '3.15.0',
+548 silly addNameRange     '4.7.0',
+548 silly addNameRange     '3.15.1',
+548 silly addNameRange     '4.7.1',
+548 silly addNameRange     '3.15.2',
+548 silly addNameRange     '4.7.2',
+548 silly addNameRange     '4.7.3',
+548 silly addNameRange     '3.15.3',
+548 silly addNameRange     '4.7.4',
+548 silly addNameRange     '3.16.0',
+548 silly addNameRange     '4.8.0',
+548 silly addNameRange     '3.16.1',
+548 silly addNameRange     '4.8.1',
+548 silly addNameRange     '3.16.2',
+548 silly addNameRange     '4.8.2',
+548 silly addNameRange     '3.16.3',
+548 silly addNameRange     '3.16.4',
+548 silly addNameRange     '4.8.3',
+548 silly addNameRange     '3.16.5',
+548 silly addNameRange     '3.16.6',
+548 silly addNameRange     '4.8.4',
+548 silly addNameRange     '3.16.7',
+548 silly addNameRange     '4.8.5',
+548 silly addNameRange     '3.16.8',
+548 silly addNameRange     '4.8.6',
+548 silly addNameRange     '3.16.9',
+548 silly addNameRange     '4.8.7',
+548 silly addNameRange     '3.16.10',
+548 silly addNameRange     '4.8.8',
+548 silly addNameRange     '3.17.0',
+548 silly addNameRange     '3.17.1',
+548 silly addNameRange     '4.9.0',
+548 silly addNameRange     '3.17.2',
+548 silly addNameRange     '4.9.1',
+548 silly addNameRange     '4.9.2',
+548 silly addNameRange     '3.17.3',
+548 silly addNameRange     '4.9.3',
+548 silly addNameRange     '3.17.4',
+548 silly addNameRange     '4.9.4',
+548 silly addNameRange     '3.17.5',
+548 silly addNameRange     '4.9.5',
+548 silly addNameRange     '3.17.6',
+548 silly addNameRange     '3.17.7',
+548 silly addNameRange     '4.9.6',
+548 silly addNameRange     '4.9.7',
+548 silly addNameRange     '3.17.8',
+548 silly addNameRange     '4.9.8',
+548 silly addNameRange     '3.18.0',
+548 silly addNameRange     '3.18.1',
+548 silly addNameRange     '4.10.0',
+548 silly addNameRange     '3.18.2',
+548 silly addNameRange     '4.10.1',
+548 silly addNameRange     '5.0.0-alpha.1',
+548 silly addNameRange     '3.18.3',
+548 silly addNameRange     '4.10.2',
+548 silly addNameRange     '3.18.4',
+548 silly addNameRange     '4.10.3',
+548 silly addNameRange     '4.10.4',
+548 silly addNameRange     '4.10.5',
+548 silly addNameRange     '3.18.5',
+548 silly addNameRange     '3.18.6',
+548 silly addNameRange     '4.10.6',
+548 silly addNameRange     '4.10.7',
+548 silly addNameRange     '3.19.0',
+548 silly addNameRange     '4.10.8',
+548 silly addNameRange     '4.11.0',
+548 silly addNameRange     '3.19.1',
+548 silly addNameRange     '4.11.1',
+548 silly addNameRange     '3.19.2',
+548 silly addNameRange     '4.11.2',
+548 silly addNameRange     '3.20.0',
+548 silly addNameRange     '4.12.0',
+548 silly addNameRange     '3.20.1',
+548 silly addNameRange     '4.12.1',
+548 silly addNameRange     '4.12.2',
+548 silly addNameRange     '3.20.2',
+548 silly addNameRange     '4.12.3',
+548 silly addNameRange     '3.20.3',
+548 silly addNameRange     '4.12.4',
+548 silly addNameRange     '3.21.0',
+548 silly addNameRange     '4.13.0',
+548 silly addNameRange     '3.21.1',
+548 silly addNameRange     '4.13.1',
+548 silly addNameRange     '5.0.0-alpha.2',
+548 silly addNameRange     '3.21.2',
+548 silly addNameRange     '4.13.2',
+548 silly addNameRange     '4.13.3' ] ]
+549 verbose addNamed [ 'express', '4.12.4' ]
+550 verbose addNamed [ '4.12.4', '4.12.4' ]
+551 silly lockFile 3b813118-express-4-12-4 express@4.12.4
+552 verbose lock express@4.12.4 /Users/hasudhakar/.npm/3b813118-express-4-12-4.lock
+553 silly lockFile 3b813118-express-4-12-4 express@4.12.4
+554 silly lockFile 3b813118-express-4-12-4 express@4.12.4
+555 silly lockFile aa372466-express-4-12-x express@4.12.x
+556 silly lockFile aa372466-express-4-12-x express@4.12.x
+557 http 200 https://registry.npmjs.org/sendgrid/-/sendgrid-1.8.0.tgz
+558 silly lockFile 49e0364d--org-sendgrid-sendgrid-1-8-0-tgz https://registry.npmjs.org/sendgrid/-/sendgrid-1.8.0.tgz
+559 silly lockFile 49e0364d--org-sendgrid-sendgrid-1-8-0-tgz https://registry.npmjs.org/sendgrid/-/sendgrid-1.8.0.tgz
+560 silly lockFile 4bb5a619-sendgrid-1-8-0 sendgrid@1.8.0
+561 silly lockFile 4bb5a619-sendgrid-1-8-0 sendgrid@1.8.0
+562 error Error: EACCES, mkdir '/Users/hasudhakar/.npm/longjohn/0.2.8'
+562 error  { [Error: EACCES, mkdir '/Users/hasudhakar/.npm/longjohn/0.2.8']
+562 error   errno: 3,
+562 error   code: 'EACCES',
+562 error   path: '/Users/hasudhakar/.npm/longjohn/0.2.8',
+562 error   parent: 'NodejsStarterApp' }
+563 error Please try running this command again as root/Administrator.
+564 error System Darwin 14.4.0
+565 error command "node" "/usr/local/bin/npm" "install"
+566 error cwd /Users/hasudhakar/Desktop/node/Hack The Planet Hack/server docs
+567 error node -v v0.10.37
+568 error npm -v 1.4.28
+569 error path /Users/hasudhakar/.npm/longjohn/0.2.8
+570 error code EACCES
+571 error errno 3
+572 error stack Error: EACCES, mkdir '/Users/hasudhakar/.npm/longjohn/0.2.8'
+573 verbose exit [ 3, true ]

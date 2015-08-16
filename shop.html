@@ -62,11 +62,34 @@
                 <div class="container-fluid">
                     <div class="row">
                         <div class="col-lg-12">
-                            <h1>Simple Sidebar</h1>
-                            <p>This template has a responsive menu toggling system. The menu will appear collapsed on smaller screens, and will appear non-collapsed on larger screens. When toggled using the button below, the menu will appear/disappear. On small screens, the page content will be pushed off canvas.</p>
-                            <p>Make sure to keep all page content within the <code>#page-content-wrapper</code>.</p>
                             <a href="#menu-toggle" class="btn btn-default" id="menu-toggle">Toggle Menu</a>
+                            <form class="navbar-form" role="search">
+                                <div class="input-group">
+                                    <input type="text" class="form-control" placeholder="Search"  ng-model="searcher">
+                                    <div class="input-group-btn">
+                                        <div ng-click="searchItem()" > <button class="btn btn-default" type="submit" ng-disabled="searcher==''" ><i class="glyphicon glyphicon-search" ></i></button></div>
+                                    </div>
+                                </div>
+                            </form>
                         </div>
+                    </div>
+                    <div data-sr class="row jumbotron" ng-repeat="x in ebayData track by $index" class="jumbotron">
+                        <div class="col-lg-3">
+                            <img src="{{x.galleryURL}}" style="height:300px;width:250px;border-radius:15px;">
+                        </div>
+                        <div class="col-lg-9">
+                            <p>Product Name : {{x.title}}</p>
+                            <p>Price: {{x.sellingStatus.currentPrice.USD}} USD</p>
+                            <p>One Day Shipping Available : {{x.shippingInfo.oneDayShippingAvailable}}</p>
+                            <p>Shipping Type : {{x.shippingInfo.shippingType}}</p>
+                            <p>Shipping Cost : {{x.shippingInfo.shippingServiceCost.USD}}</p>
+                            
+                            <button class="btn btn-info" ng-click="buyItem($index)">Buy This Item</button>
+                        </div> 
+                        <hr/> 
+                    </div>
+                    <div ng-show="ebayData!=''">
+                        <button class="btn btn-info" ng-click="fetchNewResults()">Next Page</button>
                     </div>
                 </div>
             </div>
