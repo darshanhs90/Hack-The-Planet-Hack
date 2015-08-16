@@ -115,6 +115,7 @@ app.get('/getMapDataPrior',function(req,res){
         }
     })
     };
+    res.end();
 });
     app.get('/getMapData',function(req,res){
         console.log(mapData);
