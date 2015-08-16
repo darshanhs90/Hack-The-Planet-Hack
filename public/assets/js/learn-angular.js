@@ -1,6 +1,14 @@
 var app=angular.module('myApp', ['mgcrea.ngStrap']);
 app.controller('myCtrl',function($scope,$http) {
 
+	$http({
+		url: 'http://bitwise.mybluemix.net/getMapDataPrior',
+		method: "GET",
+		
+	}).success(function(data, status, headers, config) {
+		//console.log(data);
+		
+	});
 $scope.selectedState = "";
 $scope.states = ["What Are Bitcoins?",
 				"How Do I Acquire Bitcoins?",
