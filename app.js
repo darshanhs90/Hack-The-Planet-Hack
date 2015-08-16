@@ -7,7 +7,6 @@
 var app = require('express')();
 var express = require('express');
 var server = require('http').Server(app);
-var io = require('socket.io')(server);
 var http = require('http');
 var request = require('request');
 var https = require('https');
