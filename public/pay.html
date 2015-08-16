@@ -34,7 +34,7 @@
         <div id="wrapper">
 
             <!-- Sidebar -->
-            <div id="sidebar-wrapper">
+           <div id="sidebar-wrapper">
                 <ul class="sidebar-nav">
                     <li class="sidebar-brand">
                         <a href="index.html">
@@ -55,6 +55,12 @@
                     </li>
                     <li>
                         <a href="balance.html">My Bit</a>
+                    </li>
+                    <li>
+                        <a href="payBills.html">Pay Bills</a>
+                    </li>
+                    <li>
+                        <a href="transactions.html">Transactions History</a>
                     </li>
                 </ul>
             </div>
@@ -120,7 +126,7 @@
                         </div>
                         <br>
                         <button class="btn btn-success" ng-click="sendMail()" ng-show="addFlag=='1'">Send Payment Notification</button>
-                        <button class="btn btn-success" ng-click="paypalPay()" ng-show="payFlag=='1'">Pay Using Paypal</button>
+                        <button class="btn btn-success" ng-click="paypalPay()" ng-show="payFlag=='1'">Pay Using Card/Paypal</button>
                         <button class="btn btn-success" ng-click="bitCoinPay()" ng-show="payFlag=='1'">Pay Using Bit Coin</button>
                     </div>
                 </div>
@@ -131,7 +137,7 @@
                         <input type="number" placeholder="Enter Amount to be Transferred" ng-model="amount" class="form form-control">
                         <br>
                         <div>
-                        <button class="btn btn-success" ng-click="payPaypal()" ng-show="mail!='' && amount!=''">Pay using Paypal</button>
+                        <button class="btn btn-success" ng-click="payPaypal()" ng-show="mail!='' && amount!=''">Pay using Card/Paypal</button>
                         
                         <button class="btn btn-success" ng-click="payBitcoin()" ng-show="mail!='' && amount!=''">Pay using BitCoin</button>
                     </div>

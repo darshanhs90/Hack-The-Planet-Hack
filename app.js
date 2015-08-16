@@ -21,6 +21,7 @@ var exchangeRates = blockchain.exchangeRates;
 var statistics = blockchain.statistics;
 var clientTwilio = require('twilio')(accountSid, authToken);
 var index = -1;
+var price='';
 var util = require('util');
 var braintree = require('braintree');
 var bodyParser = require('body-parser');
@@ -118,7 +119,22 @@ app.disable('etag');
             res.send('0');
         res.end();
     });
+    app.get('/setPrice',function(req,res){
+     price=req.query.price;
+     res.end();
 
+ });
+
+
+    app.get('/getPrice',function(req,res){
+        if(price=='')
+            res.send(itemResponse[index].sellingStatus.currentPrice.USD);
+        else
+            res.send(price);
+        price='';
+        res.end();
+
+    });
 
     app.get('/ebaySearch2', function(req, res) {
         var pgs = req.query.pagenum;
@@ -197,10 +213,10 @@ app.disable('etag');
 
     app.get('/getChartdata', function(req, response) {
         statistics.getChartData('total-bitcoin', function(err,res){
-           console.log(res);
-           response.send(res);
-           response.end();
-       });
+         console.log(res);
+         response.send(res);
+         response.end();
+     });
 
     });
 
