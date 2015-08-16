@@ -4,7 +4,7 @@
 	html5up.net | @n33co
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
-<html>
+<html ng-app="myApp">
 <head>
 	<title>Aerial by HTML5 UP</title>
 	<meta charset="utf-8" />
@@ -14,7 +14,7 @@
 	<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
 	<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
 </head>
-<body class="loading">
+<body class="loading" ng-contoller="myCtrl">
 	<div id="wrapper">
 		<div id="bg"></div>
 		<div id="overlay"></div>
@@ -48,5 +48,7 @@
 	window.ontouchmove = function() { return false; }
 	window.onorientationchange = function() { document.body.scrollTop = 0; }
 	</script>
+	<script src="js/angular.min.js"></script>
+	<script src="assets/js/index-angular.js"></script>
 </body>
 </html>
