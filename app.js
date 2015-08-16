@@ -101,6 +101,7 @@ app.disable('etag');
         );
 
     });
+app.get('/getMapDataPrior',function(req,res){
     for (var i = 0; i<40; i++) {
 
         request('http://api.reimaginebanking.com/atms?key=a7e63559418eb419cd29301d32626843&page='+i, function (error, response, body) {
@@ -114,7 +115,7 @@ app.disable('etag');
         }
     })
     };
-
+});
     app.get('/getMapData',function(req,res){
         console.log(mapData);
         res.send(mapData);
