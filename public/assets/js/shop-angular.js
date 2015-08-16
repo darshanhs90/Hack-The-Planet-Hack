@@ -9,6 +9,7 @@ app.controller('myCtrl',function($scope,$http) {
 	// 	console.log(data);
 	// 	$scope.ebayData=data;
 	// });
+swal({   title: "Search!",   text: "Use the Search to search the ebay store to buy.",   timer: 3000,   showConfirmButton: false });
 $scope.pagenum=1;
 $scope.searchItem=function(){
 	$scope.pagenum=1;

@@ -10,6 +10,24 @@ app.controller('myCtrl', function($scope, $http) {
     $scope.percent2 = '';
     $scope.percent3 = '';
     $scope.price = '';
+    $scope.prd=false;
+    $scope.prf=false;
+    $scope.mail='';
+    $scope.amount='';
+    
+    $scope.prodOrder=function(){
+        $scope.prd=true;
+        $scope.prf=false;
+
+    }
+
+
+    $scope.payFriend=function(){
+        $scope.prd=false;
+        $scope.prf=true;
+    }
+
+
     $http({
         url: 'http://localhost:1337/getItem',
         method: "GET"
@@ -17,8 +35,9 @@ app.controller('myCtrl', function($scope, $http) {
         if (data != '0') {
             $scope.payData = data;
             $scope.price = data.sellingStatus.currentPrice.USD;
+            $scope.prd=true;
         } else
-            $scope.payData = '';
+        $scope.payData = '';
     });
     $scope.payFlag = function() {
         $scope.paymentFlag = '1';
@@ -29,8 +48,18 @@ app.controller('myCtrl', function($scope, $http) {
         alertify.success('paying using paypal');
     }
     $scope.bitCoinPay = function() {
-        //pay using bitcoin
-        alertify.success('paying using bit coin');
+      
+        $http({
+            url: 'http://localhost:1337/sendBitcoin',
+            method: "GET",
+            params:{amount:0.0001}
+        }).success(function(data, status, headers, config) {
+          if(data.error==undefined)
+            alertify.success('Payment Successful using bit coin with tx_hash : '+data.tx_hash);
+        else{
+            alertify.error('Payment Unsuccessful due to insufficient funds');
+        }
+    });
     }
     $scope.addRows = function() {
         $scope.addFlag = '1';
@@ -94,6 +123,48 @@ app.controller('myCtrl', function($scope, $http) {
             message = 'User with mailid' + $scope.email3 + ' will be paying ' + ($scope.percent3 * $scope.price / 100);
         alertify.success(message);
     }
+
+    $scope.payPaypal=function(){
+
+    }
+
+    $scope.payBitcoin=function(){
+        $http({
+            url: 'https://api.coindesk.com/v1/bpi/currentprice.json',
+            method: "GET"
+        }).success(function(data, status, headers, config) {
+            var bitValue=data.bpi.USD.rate
+            var titleSwal='Are you sure about using paying '+$scope.amount/bitValue+ ' Bitcoins to '+$scope.mail;
+
+
+            swal({   title: titleSwal,   text: "You will not be able to rollback once done!",   type: "warning",   showCancelButton: true,   confirmButtonColor: "#DD6B55",   confirmButtonText: "Yes, confirm it!",   cancelButtonText: "No, cancel It!",   closeOnConfirm: false,   closeOnCancel: false }, function(isConfirm){   if (isConfirm) {     swal("Payment Successful!", "You have payed "+$scope.amount/bitValue+ " Bitcoins to "+$scope.mail, "success"); 
+                $http({
+                    url: 'http://localhost:1337/sendEmail',
+                    method: "GET",
+                    params:{email:$scope.mail,message:'Your friend has payed you '+$scope.amount/bitValue+' Bitcoins',subject:'Splitwise Debt'}
+                }).success(function(data, status, headers, config) {
+                    console.log(data);
+                    alertify.success('Payment Mail Confirmation sent to recipient');
+                    $http({
+                        url: 'http://localhost:1337/sendBitcoin',
+                        method: "GET",
+                        params:{amount:0.0001}
+                    }).success(function(data, status, headers, config) {
+                        if(data.error==undefined)
+                            alertify.success('Payment Successful using bit coin with tx_hash : '+data.tx_hash);
+                        else{
+                            alertify.error('Payment Unsuccessful due to insufficient funds');
+                        }
+                    });
+                });
+            } else {     swal("Cancelled", "Your Payment is Unsuccessful", "error");   } });
+
+});
+}
+
+
+
+
 
 
 });

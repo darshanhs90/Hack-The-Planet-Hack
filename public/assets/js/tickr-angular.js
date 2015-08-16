@@ -11,9 +11,9 @@ app.controller('myCtrl', function($scope, $http) {
         }).success(function(data, status, headers, config) {
             if (data.bpi.USD.rate != bitValue) {
                 if (data.bpi.USD.rate - bitValue > 0)
-                    alertify.success('The changed Bit coin value for USD is ' + data.bpi.USD.rate);
+                    alertify.success('The changed Bit coin value for 1 USD is ' + data.bpi.USD.rate);
                 else
-                    alertify.error('The changed Bit coin value for USD is ' + data.bpi.USD.rate);
+                    alertify.error('The changed Bit coin value for 1 USD is ' + data.bpi.USD.rate);
                 bitValue = data.bpi.USD.rate;
             }
         });
@@ -51,8 +51,8 @@ app.controller('myCtrl', function($scope, $http) {
 
                 // Let's put a sequence number aside so we can use it in the event callbacks
                 var seq = 0,
-                delays = 8,
-                durations = 5;
+                delays = 20,
+                durations = 20;
 
                 // Once the chart is fully created we reset the sequence
                 chart.on('created', function() {

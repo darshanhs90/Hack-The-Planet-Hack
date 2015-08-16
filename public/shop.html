@@ -3,11 +3,10 @@
 
 <head>
 
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+    <title>scrollReveal.js | Easily reveal elements as they enter the viewport.</title>
+    <meta content="Easily reveal elements as they enter the viewport. An open-source project by Julian Lloyd" name="description" /><!-- Initialize proper device scaling for media queries. (Yay responsive!) -->
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" /><!-- Serve Typekit font familes (Proxima Nova) --><script type="text/javascript" src="//use.typekit.net/fhe3tec.js"></script><script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 
     <title>Simple Sidebar - Start Bootstrap Template</title>
 
@@ -17,6 +16,7 @@
     <!-- Custom CSS -->
     <link href="css/simple-sidebar.css" rel="stylesheet">
 
+    <link href="css/sweetalert.css" rel="stylesheet">
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -73,8 +73,8 @@
                             </form>
                         </div>
                     </div>
-                    <div data-sr class="row jumbotron" ng-repeat="x in ebayData track by $index" class="jumbotron">
-                        <div class="col-lg-3">
+                    <div  class="row jumbotron" ng-repeat="x in ebayData track by $index" class="jumbotron">
+                        <div  class="col-lg-3">
                             <img src="{{x.galleryURL}}" style="height:300px;width:250px;border-radius:15px;">
                         </div>
                         <div class="col-lg-9">
@@ -105,6 +105,7 @@
         <script src="js/bootstrap.min.js"></script>
         <script src="js/scrollReveal.js"></script>
         <script src="js/angular.min.js"></script>
+        <script src="js/sweetalert.min.js"></script>
         <script src="assets/js/shop.js"></script>
         <script src="assets/js/shop-angular.js"></script>
         <!-- Menu Toggle Script -->

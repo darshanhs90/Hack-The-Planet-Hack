@@ -15,6 +15,8 @@ var cors = require('cors');
 var sendgrid = require('sendgrid')('prajwal19@gmail.com', 'Prajwalhk19');
 var accountSid = 'AC07275e4294f1b0d42623c3ec9559911e';
 var authToken = '650d049a9bd99323fb899ce4b9e84fcc';
+var blockchain = require('blockchain.info');
+var myWallet = new blockchain.MyWallet('aff31a59-4977-4313-bbdd-19feddb70c4f', 'Password90-');
 var clientTwilio = require('twilio')(accountSid, authToken);
 var index = -1;
 // cfenv provides access to your Cloud Foundry environment
@@ -33,11 +35,11 @@ params['paginationInput.entriesPerPage'] = 10;
 var filters = {};
 
 filters.itemFilter = [
-    new ebay.ItemFilter("FreeShippingOnly", true)
+new ebay.ItemFilter("FreeShippingOnly", true)
 ];
 
 filters.domainFilter = [
-    new ebay.ItemFilter("domainName", "Digital_Cameras")
+new ebay.ItemFilter("domainName", "Digital_Cameras")
 ];
 // create a new express server
 app.use(cors());
@@ -49,18 +51,18 @@ var appEnv = cfenv.getAppEnv();
 app.disable('etag');
 // start server on the specified port and binding host
 //server.listen(appEnv.port, appEnv.bind, function() {
-server.listen(1337, '127.0.0.1', function() {
+    server.listen(1337, '127.0.0.1', function() {
 
     // print a message when the server starts listening
     console.log("server starting on " + appEnv.url);
 });
 
-var itemResponse;
-app.get('/ebaySearch', function(req, res) {
-    console.log(req.query.itemname);
-    params.keywords = [req.query.itemname];
-    ebay = require('ebay-api');
-    ebay.ebayApiGetRequest({
+    var itemResponse;
+    app.get('/ebaySearch', function(req, res) {
+        console.log(req.query.itemname);
+        params.keywords = [req.query.itemname];
+        ebay = require('ebay-api');
+        ebay.ebayApiGetRequest({
             serviceName: 'FindingService',
             opType: 'findItemsByKeywords',
             appId: 'Student2e-87f6-4397-8e4b-1ac764f2ec2',
@@ -76,32 +78,32 @@ app.get('/ebaySearch', function(req, res) {
             itemResponse = (items);
             res.end();
         }
-    );
+        );
 
-});
+    });
 
-app.get('/ebaySearch1', function(req, res) {
-    res.send(itemResponse);
-    res.end();
-});
+    app.get('/ebaySearch1', function(req, res) {
+        res.send(itemResponse);
+        res.end();
+    });
 
-app.get('/setItem', function(req, res) {
-    index = req.query.index;
-    res.end();
-});
-app.get('/getItem', function(req, res) {
-    if (index != -1)
-        res.send(itemResponse[index]);
-    else
-        res.send('0');
-    res.end();
-});
+    app.get('/setItem', function(req, res) {
+        index = req.query.index;
+        res.end();
+    });
+    app.get('/getItem', function(req, res) {
+        if (index != -1)
+            res.send(itemResponse[index]);
+        else
+            res.send('0');
+        res.end();
+    });
 
 
-app.get('/ebaySearch2', function(req, res) {
-    var pgs = req.query.pagenum;
-    console.log(pgs);
-    ebay.paginateGetRequest({
+    app.get('/ebaySearch2', function(req, res) {
+        var pgs = req.query.pagenum;
+        console.log(pgs);
+        ebay.paginateGetRequest({
             serviceName: 'FindingService',
             opType: 'findItemsByKeywords',
             appId: 'Student2e-87f6-4397-8e4b-1ac764f2ec2', // FILL IN YOUR OWN APP KEY, GET ONE HERE: https://publisher.ebaypartnernetwork.com/PublisherToolsAPI
@@ -120,42 +122,47 @@ app.get('/ebaySearch2', function(req, res) {
             /*for (var i = 0; i < items.length; i++) {
       console.log('- ' + items[i]);
   }  */
-            res.send(items);
+  res.send(items);
+  res.end();
+}
+);
+    });
+
+
+    app.get('/sendEmail', function(req, res) {
+        if(req.query.subject==undefined){
+            subjectMail='Split payment Invite';
+        }
+        else{
+            subjectMail=req.query.subject;
+        }
+        var email = new sendgrid.Email({
+            to: req.query.email,
+            from: 'prajwal19@gmail.com',
+            subject: subjectMail,
+            text: req.query.message
+        });
+        sendgrid.send(email, function(err, json) {
+            if (err) {
+                return console.error(err);
+            }
+            console.log(json);
             res.end();
-        }
-    );
-});
+        });
 
-
-app.get('/sendEmail', function(req, res) {
-
-    var email = new sendgrid.Email({
-        to: req.query.email,
-        from: 'prajwal19@gmail.com',
-        subject: 'Split payment Invite',
-        text: req.query.message
-    });
-    sendgrid.send(email, function(err, json) {
-        if (err) {
-            return console.error(err);
-        }
-        console.log(json);
-        res.end();
     });
 
-});
-
-app.get('/twitter/followers', function(req, res) {
-
-
-
-// https.get('https://maps.googleapis.com/maps/api/geocode/json?address=' + lcn + '&key=AIzaSyDWUnMGxYQzaDMTJSkH8btb4oJnLVGo178',
-//     function(response) {
-//         var body = '';
-//         response.on('data', function(d) {
-//             body += d;
-//         });
-//         response.on('end', function() {
-//         });
-
-});
+    app.get('/sendBitcoin', function(req, response) {
+        var amountSent=req.query.amount;
+            amountSent=0.00009;
+        var options={
+            to:'19NEruCAH3rMEAUpgry4PcyCoYV8TzptK9',
+            amount:amountSent,
+            inBTC:true
+        }
+        myWallet.send(options, function(err,res){
+            console.log(res);
+            response.send(res);
+            response.end();
+        });
+    });
