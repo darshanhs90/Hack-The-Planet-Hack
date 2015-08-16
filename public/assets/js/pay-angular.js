@@ -74,9 +74,9 @@ app.controller('myCtrl', function($scope, $http) {
                 alert('Sum of Split percentages should be 100');
             } else {
                 //send mails
-                $scope.message1 = 'Your friend has invited you to pay ' + ($scope.percent1 * $scope.price / 100) + 'USD for ' + $scope.payData.title + ' .The payment can be done from the following link http://localhost:1337/pay.html';
-                $scope.message2 = 'Your friend has invited you to pay ' + ($scope.percent2 * $scope.price / 100) + 'USD for ' + $scope.payData.title + ' .The payment can be done from the following link http://localhost:1337/pay.html';
-                $scope.message3 = 'Your friend has invited you to pay ' + ($scope.percent3 * $scope.price / 100) + 'USD for ' + $scope.payData.title + ' .The payment can be done from the following link http://localhost:1337/pay.html';
+                $scope.message1 = 'Your friend has invited you to pay ' + ($scope.percent1 * $scope.price / 100) + 'USD for ' + $scope.payData.title + ' .The payment can be done from the following link http://bitwise.mybluemix/pay.html';
+                $scope.message2 = 'Your friend has invited you to pay ' + ($scope.percent2 * $scope.price / 100) + 'USD for ' + $scope.payData.title + ' .The payment can be done from the following link http://bitwise.mybluemix/pay.html';
+                $scope.message3 = 'Your friend has invited you to pay ' + ($scope.percent3 * $scope.price / 100) + 'USD for ' + $scope.payData.title + ' .The payment can be done from the following link http://bitwise.mybluemix/pay.html';
 
                 $http({
                     url: 'http://bitwise.mybluemix.net/sendEmail',
