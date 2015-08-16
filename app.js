@@ -17,8 +17,28 @@ var accountSid = 'AC07275e4294f1b0d42623c3ec9559911e';
 var authToken = '650d049a9bd99323fb899ce4b9e84fcc';
 var blockchain = require('blockchain.info');
 var myWallet = new blockchain.MyWallet('aff31a59-4977-4313-bbdd-19feddb70c4f', 'Password90-');
+var exchangeRates = blockchain.exchangeRates;
+var statistics = blockchain.statistics;
 var clientTwilio = require('twilio')(accountSid, authToken);
 var index = -1;
+var util = require('util');
+var braintree = require('braintree');
+var bodyParser = require('body-parser');
+
+/**
+ * Instantiate your server and a JSON parser to parse all incoming requests
+ */
+ var jsonParser = bodyParser.json();
+
+/**
+ * Instantiate your gateway (update here with your Braintree API Keys)
+ */
+ var gateway = braintree.connect({
+  environment:  braintree.Environment.Sandbox,
+  merchantId:   'zwh8pg7kfy2nzvhp',
+  publicKey:    '6jw3rx8zs6qnq377',
+  privateKey:   '57f7f84f0aed9ad871fddf21a823b9fc'
+});
 // cfenv provides access to your Cloud Foundry environment
 // for more info, see: https://www.npmjs.com/package/cfenv
 var cfenv = require('cfenv');
@@ -154,7 +174,7 @@ app.disable('etag');
 
     app.get('/sendBitcoin', function(req, response) {
         var amountSent=req.query.amount;
-            amountSent=0.00009;
+        amountSent=0.00009;
         var options={
             to:'19NEruCAH3rMEAUpgry4PcyCoYV8TzptK9',
             amount:amountSent,
@@ -166,3 +186,56 @@ app.disable('etag');
             response.end();
         });
     });
+
+    app.get('/getBalance', function(req, response) {
+        myWallet.getBalance(true,function(err,res){
+            response.send(res+'');
+            response.end();
+        });
+
+    });
+
+    app.get('/getChartdata', function(req, response) {
+        statistics.getChartData('total-bitcoin', function(err,res){
+           console.log(res);
+           response.send(res);
+           response.end();
+       });
+
+    });
+
+
+    app.get('/getExchangeRates', function(req, response) {
+        exchangeRates.getTicker(function(err,res){
+          console.log(res);
+          response.send(res);
+          response.end();
+      });
+
+    });
+
+    app.post('/api/v1/token', function (request, response) {
+      gateway.clientToken.generate({}, function (err, res) {
+        if (err) throw err;
+        response.json({
+          "client_token": res.clientToken
+      });
+    });
+  });
+
+/**
+ * Route to process a sale transaction
+ */
+ app.post('/api/v1/process', jsonParser, function (request, response) {
+  var transaction = request.body;
+  gateway.transaction.sale({
+    amount: transaction.amount,
+    paymentMethodNonce: transaction.payment_method_nonce
+}, function (err, result) {
+    if (err) throw err;
+    console.log(util.inspect(result));
+    response.json(result);
+});
+});
+
+
