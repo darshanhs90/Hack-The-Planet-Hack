@@ -34,7 +34,7 @@ app.controller('myCtrl', function($scope, $http) {
     }).success(function(data, status, headers, config) {
         if (data != '0') {
             $scope.payData = data;
-            $scope.price = data.sellingStatus.currentPrice.USD;
+            $scope.price = parseInt(data.sellingStatus.currentPrice.USD)+parseInt(data.shippingInfo.shippingServiceCost.USD);
             $scope.prd=true;
         } else
         $scope.payData = '';
@@ -43,9 +43,9 @@ app.controller('myCtrl', function($scope, $http) {
         $scope.paymentFlag = '1';
     }
 
-    $scope.payPalPay = function() {
+    $scope.paypalPay = function() {
         //pay using bitcoin
-        alertify.success('paying using paypal');
+        window.location.replace('./dropin.html');
     }
     $scope.bitCoinPay = function() {
       
@@ -125,7 +125,7 @@ app.controller('myCtrl', function($scope, $http) {
     }
 
     $scope.payPaypal=function(){
-
+window.location.replace('./dropin.html');
     }
 
     $scope.payBitcoin=function(){

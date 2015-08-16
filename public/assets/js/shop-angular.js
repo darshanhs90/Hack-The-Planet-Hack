@@ -9,9 +9,25 @@ app.controller('myCtrl',function($scope,$http) {
 	// 	console.log(data);
 	// 	$scope.ebayData=data;
 	// });
-swal({   title: "Search!",   text: "Use the Search to search the ebay store to buy.",   timer: 3000,   showConfirmButton: false });
+
+	var options = {
+		bg: 'red',
+
+	// leave target blank for global nanobar
+	target: '',
+
+	// id for new nanobar
+	id: 'mynano'
+};
+
+var nanobar = new Nanobar( options );
+
+
+
+swal({   title: "Search!",   text: "Use the Search to search the ebay store to buy.",   timer: 2000,   showConfirmButton: false });
 $scope.pagenum=1;
 $scope.searchItem=function(){
+	nanobar.go(20);
 	$scope.pagenum=1;
 	$http({
 		url: 'http://localhost:1337/ebaySearch',
@@ -19,12 +35,15 @@ $scope.searchItem=function(){
 		params:{itemname:$scope.searcher}
 	}).success(function(data, status, headers, config) {
 		console.log(data);
+		nanobar.go(55);
 		$http({
 			url: 'http://localhost:1337/ebaySearch1',
 			method: "GET",
 			params:{itemname:$scope.searcher}
 		}).success(function(data, status, headers, config) {
+			   nanobar.go(75);
 			$scope.ebayData=data;
+			nanobar.go(100);
 		});
 	});
 }
@@ -32,6 +51,7 @@ $scope.searchItem=function(){
 
 
 $scope.fetchNewResults=function(){
+	nanobar.go(45);
 $http({
 		url: 'http://localhost:1337/ebaySearch2',
 		method: "GET",
@@ -39,17 +59,20 @@ $http({
 	}).success(function(data, status, headers, config) {
 		console.log(data);
 			$scope.ebayData=data;
+			nanobar.go(100);
 	});
 	//$scope.pagenum=$scope.pagenum+1;
 }
 
 $scope.buyItem=function($val){
-
+nanobar.go(45);
 $http({
 		url: 'http://localhost:1337/setItem',
 		method: "GET",
 		params:{index:$val}
 	}).success(function(data, status, headers, config) {
+		
+		nanobar.go(100);
 		window.location.replace('./pay.html');
 	});
 

@@ -56,7 +56,7 @@ params['paginationInput.entriesPerPage'] = 10;
 var filters = {};
 
 filters.itemFilter = [
-new ebay.ItemFilter("FreeShippingOnly", true)
+//new ebay.ItemFilter("FreeShippingOnly", true)
 ];
 
 filters.domainFilter = [

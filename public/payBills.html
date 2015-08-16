@@ -30,7 +30,7 @@
 
 </head>
 
-<body ng-controller="myCtrl">
+<body ng-controller="myCtrl" background="a.jpg">
 
     <div id="wrapper">
 
@@ -72,10 +72,10 @@
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-lg-12">
-                        <a href="#menu-toggle" class="btn btn-default" id="menu-toggle">Toggle Menu</a>
+                        <a href="#menu-toggle" class="btn btn-info" id="menu-toggle">Toggle Menu</a>
                     </div>
                 </div>
-                <div class="row">
+                <div class="row" style="font-size:18px;">
                     <div class="col-lg-12">
                         <div ng-repeat="bill in bills track by $index ">
                             <p>Bill Date : {{bill.creation_date}}<span class="glyphicon glyphicon-calendar"></span></p>
@@ -101,6 +101,7 @@
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
         <script src="js/angular.min.js"></script>
+        <script src="js/nanobar.min.js"></script>
         <script src="js/alertify.js"></script>
         <script src="js/sweetalert.min.js"></script>
         <script src="assets/js/payBills.js"></script>

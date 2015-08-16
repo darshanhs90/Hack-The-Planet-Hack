@@ -26,7 +26,7 @@
 
     </head>
 
-    <body ng-controller="myCtrl">
+    <body ng-controller="myCtrl" background="a.jpg">
 
         <div id="wrapper">
 
@@ -68,7 +68,7 @@
                 <div class="container-fluid">
                     <div class="row">
                         <div class="col-lg-12">
-                            <a href="#menu-toggle" class="btn btn-default" id="menu-toggle">Toggle Menu</a>
+                            <a href="#menu-toggle" class="btn btn-info" id="menu-toggle">Toggle Menu</a>
                             <form class="navbar-form" role="search">
                                 <div class="input-group">
                                     <input type="text" class="form-control" placeholder="Search"  ng-model="searcher">
@@ -79,7 +79,7 @@
                             </form>
                         </div>
                     </div>
-                    <div  class="row jumbotron" ng-repeat="x in ebayData track by $index" class="jumbotron">
+                    <div  class="row jumbotron" ng-repeat="x in ebayData track by $index" style="font-size:18px;">
                         <div  class="col-lg-3">
                             <img src="{{x.galleryURL}}" style="height:300px;width:250px;border-radius:15px;">
                         </div>
@@ -110,7 +110,8 @@
         <!-- Bootstrap Core JavaScript -->
         <script src="js/bootstrap.min.js"></script>
         <script src="js/scrollReveal.js"></script>
-        <script src="js/angular.min.js"></script>
+        <script src="js/angular.min.js"></script>    
+        <script src="js/nanobar.min.js"></script>
         <script src="js/sweetalert.min.js"></script>
         <script src="assets/js/shop.js"></script>
         <script src="assets/js/shop-angular.js"></script>

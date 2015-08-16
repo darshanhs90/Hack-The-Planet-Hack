@@ -3,51 +3,66 @@ app.controller('myCtrl', function($scope, $http) {
     var bitValue = '';
     $scope.startDate='';
     $scope.endDate='';
-    
-    setInterval(function() {
-        $http({
-            url: 'https://api.coindesk.com/v1/bpi/currentprice.json',
-            method: "GET"
-        }).success(function(data, status, headers, config) {
-            if (data.bpi.USD.rate != bitValue) {
-                if (data.bpi.USD.rate - bitValue > 0)
-                    alertify.success('The changed Bit coin value for 1 USD is ' + data.bpi.USD.rate);
-                else
-                    alertify.error('The changed Bit coin value for 1 USD is ' + data.bpi.USD.rate);
-                bitValue = data.bpi.USD.rate;
-            }
-        });
-    }, 1000);
-    $scope.generateChart = function(startDate, endDate) {
-       var startDate=(new Date($scope.startDate).toISOString().split('T')[0]);
-        var endDate=(new Date($scope.endDate).toISOString().split('T')[0]);
+    var options = {
+        bg: 'red',
 
-        if($scope.startDate=='' || $scope.endDate==''){
-            alertify.error('Error : Select start and end date before generating bit chart');
+    // leave target blank for global nanobar
+    target: '',
+
+    // id for new nanobar
+    id: 'mynano'
+};
+
+var nanobar = new Nanobar( options );
+
+
+
+setInterval(function() {
+    $http({
+        url: 'https://api.coindesk.com/v1/bpi/currentprice.json',
+        method: "GET"
+    }).success(function(data, status, headers, config) {
+        if (data.bpi.USD.rate != bitValue) {
+            if (data.bpi.USD.rate - bitValue > 0)
+                alertify.success('The changed Bit coin value for 1 USD is ' + data.bpi.USD.rate);
+            else
+                alertify.error('The changed Bit coin value for 1 USD is ' + data.bpi.USD.rate);
+            bitValue = data.bpi.USD.rate;
         }
-        else{
+    });
+}, 1000);
+$scope.generateChart = function(startDate, endDate) {
+    nanobar.go(45);
+ var startDate=(new Date($scope.startDate).toISOString().split('T')[0]);
+ var endDate=(new Date($scope.endDate).toISOString().split('T')[0]);
 
-            $http({
-                url: 'http://api.coindesk.com/v1/bpi/historical/close.json?start=' + startDate + '&end=' + endDate,
-                method: "GET"
-            }).success(function(data, status, headers, config) {
-                var keys = [];
-                var labelsValue = [];
-                for (var key in data.bpi) {
-                    keys.push(key);
-                    labelsValue.push(data.bpi[key]);
-                }
+ if($scope.startDate=='' || $scope.endDate==''){
+    alertify.error('Error : Select start and end date before generating bit chart');
+}
+else{
+
+    $http({
+        url: 'http://api.coindesk.com/v1/bpi/historical/close.json?start=' + startDate + '&end=' + endDate,
+        method: "GET"
+    }).success(function(data, status, headers, config) {
+        nanobar.go(45);
+        var keys = [];
+        var labelsValue = [];
+        for (var key in data.bpi) {
+            keys.push(key);
+            labelsValue.push(data.bpi[key]);
+        }
 
 
 
-                var chart = new Chartist.Line('.ct-chart', {
-                    labels: keys,
-                    series: [
-                    labelsValue
-                    ]
-                }, {
-                    low: 0
-                });
+        var chart = new Chartist.Line('.ct-chart', {
+            labels: keys,
+            series: [
+            labelsValue
+            ]
+        }, {
+            low: 0
+        });
 
                 // Let's put a sequence number aside so we can use it in the event callbacks
                 var seq = 0,
@@ -154,6 +169,7 @@ app.controller('myCtrl', function($scope, $http) {
                         data.element.animate(animations);
                     }
                 });
+nanobar.go(100);
 });
 }
 }

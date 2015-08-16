@@ -29,12 +29,12 @@
 
     </head>
 
-    <body ng-controller="myCtrl">
+    <body ng-controller="myCtrl" background="a.jpg">
 
         <div id="wrapper">
 
             <!-- Sidebar -->
-           <div id="sidebar-wrapper">
+            <div id="sidebar-wrapper">
                 <ul class="sidebar-nav">
                     <li class="sidebar-brand">
                         <a href="index.html">
@@ -79,7 +79,7 @@
                     <br>
                     <br>
                     
-                    <div class="row jumbotron" ng-show="payData!='' && prd==true">
+                    <div class="row jumbotron" ng-show="payData!='' && prd==true" style="font-size:18px;">
                         <div class="col-lg-4">
                            <img src="{{payData.galleryURL}}" style="height:300px;width:250px;border-radius:15px;">
                        </div>
@@ -137,10 +137,10 @@
                         <input type="number" placeholder="Enter Amount to be Transferred" ng-model="amount" class="form form-control">
                         <br>
                         <div>
-                        <button class="btn btn-success" ng-click="payPaypal()" ng-show="mail!='' && amount!=''">Pay using Card/Paypal</button>
-                        
-                        <button class="btn btn-success" ng-click="payBitcoin()" ng-show="mail!='' && amount!=''">Pay using BitCoin</button>
-                    </div>
+                            <button class="btn btn-success" ng-click="payPaypal()" ng-show="mail!='' && amount!=''">Pay using Card/Paypal</button>
+
+                            <button class="btn btn-success" ng-click="payBitcoin()" ng-show="mail!='' && amount!=''">Pay using BitCoin</button>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -156,7 +156,8 @@
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
     <script src="js/angular.min.js"></script>
-    <script src="js/alertify.js"></script>
+    <script src="js/alertify.js"></script>      
+    <script src="js/nanobar.min.js"></script>
     <script src="js/sweetalert.min.js"></script>
     
     <script src="assets/js/pay.js"></script>
