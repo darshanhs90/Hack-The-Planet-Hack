@@ -11,11 +11,11 @@ var http = require('http');
 var request = require('request');
 var https = require('https');
 var cors = require('cors');
-var sendgrid = require('sendgrid')('prajwal19@gmail.com', 'Prajwalhk19');
-var accountSid = 'AC07275e4294f1b0d42623c3ec9559911e';
-var authToken = '650d049a9bd99323fb899ce4b9e84fcc';
+var sendgrid = require('sendgrid')('id', 'pwd');
+var accountSid = 'accountSid';
+var authToken = 'authToken';
 var blockchain = require('blockchain.info');
-var myWallet = new blockchain.MyWallet('aff31a59-4977-4313-bbdd-19feddb70c4f', 'Password90-');
+var myWallet = new blockchain.MyWallet('id', 'pwd');
 var exchangeRates = blockchain.exchangeRates;
 var statistics = blockchain.statistics;
 var clientTwilio = require('twilio')(accountSid, authToken);
@@ -35,9 +35,9 @@ var mapData=[];
  */
  var gateway = braintree.connect({
   environment:  braintree.Environment.Sandbox,
-  merchantId:   'zwh8pg7kfy2nzvhp',
-  publicKey:    '6jw3rx8zs6qnq377',
-  privateKey:   '57f7f84f0aed9ad871fddf21a823b9fc'
+  merchantId:   'id',
+  publicKey:    'publicKey',
+  privateKey:   'privateKey'
 });
 // cfenv provides access to your Cloud Foundry environment
 // for more info, see: https://www.npmjs.com/package/cfenv
@@ -85,7 +85,7 @@ server.listen(appEnv.port, appEnv.bind, function() {
         ebay.ebayApiGetRequest({
             serviceName: 'FindingService',
             opType: 'findItemsByKeywords',
-            appId: 'Student2e-87f6-4397-8e4b-1ac764f2ec2',
+            appId: 'appid',
             params: params,
             filters: filters,
             parser: ebay.parseItemsFromResponse // (default)
@@ -104,7 +104,7 @@ server.listen(appEnv.port, appEnv.bind, function() {
 app.get('/getMapDataPrior',function(req,res){
     for (var i = 0; i<40; i++) {
 
-        request('http://api.reimaginebanking.com/atms?key=a7e63559418eb419cd29301d32626843&page='+i, function (error, response, body) {
+        request('http://api.reimaginebanking.com/atms?key=key&page='+i, function (error, response, body) {
           if (!error && response.statusCode == 200) {
             console.log(JSON.parse(body).data);
             var dt=JSON.parse(body).data;
@@ -161,7 +161,7 @@ app.get('/getMapDataPrior',function(req,res){
         ebay.paginateGetRequest({
             serviceName: 'FindingService',
             opType: 'findItemsByKeywords',
-            appId: 'Student2e-87f6-4397-8e4b-1ac764f2ec2', // FILL IN YOUR OWN APP KEY, GET ONE HERE: https://publisher.ebaypartnernetwork.com/PublisherToolsAPI
+            appId: 'appId', // FILL IN YOUR OWN APP KEY, GET ONE HERE: https://publisher.ebaypartnernetwork.com/PublisherToolsAPI
             params: params,
             filters: filters,
             parser: ebay.parseItemsFromResponse,
@@ -193,7 +193,7 @@ app.get('/getMapDataPrior',function(req,res){
         }
         var email = new sendgrid.Email({
             to: req.query.email,
-            from: 'prajwal19@gmail.com',
+            from: 'id',
             subject: subjectMail,
             text: req.query.message
         });
@@ -211,7 +211,7 @@ app.get('/getMapDataPrior',function(req,res){
         var amountSent=req.query.amount;
         amountSent=0.00009;
         var options={
-            to:'19NEruCAH3rMEAUpgry4PcyCoYV8TzptK9',
+            to:'id',
             amount:amountSent,
             inBTC:true
         }
